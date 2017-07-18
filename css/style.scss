@@ -68,7 +68,10 @@ button {
                 cursor: pointer;
                 a {
                     position: relative;
-                    left: 22px;
+                    width: 105px;
+                    height: 40px;
+                    display: block;
+                    text-align: center;
                     top: 11px;
                 }
             }
@@ -89,6 +92,7 @@ button {
 ///////// HOME /////////
 .home {
     width: 100%;
+    min-height: 813px;
     height: 100vh;
     background: url("../images/background@3x.png");
     background-repeat: no-repeat;
@@ -119,7 +123,7 @@ button {
         top: 255px;
         left: 152px;
     }
-    button {
+    .downloadMitto {
         width: 156px;
         height: 40px;
         top: 379px;
@@ -138,6 +142,30 @@ button {
             text-align: left;
             color: #ffffff;
         }
+    }
+    .video-box {
+        width: 800px;
+        height: 322px;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .video-link {
+        width: 207px;
+        height: 52px;
+        border: none;
+        border-radius: 100px;
+        background-color: #ffffff;
+        font-family: "Montserrat";
+        font-size: 16px;
+        text-align: center;
+        color: #de5628;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
+        position: absolute;
+        bottom: 147px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -303,6 +331,7 @@ button {
     background-image: linear-gradient(197deg, #de6221, #f8622c);
     display: block;
     position: relative;
+    margin-top: 90px;
     .content {
         margin-left: auto;
         margin-right: auto;

@@ -58,7 +58,10 @@ button {
         cursor: pointer; }
         .navbar .navbar-right li:last-child a {
           position: relative;
-          left: 22px;
+          width: 105px;
+          height: 40px;
+          display: block;
+          text-align: center;
           top: 11px; }
       .navbar .navbar-right li:last-child:hover {
         background-color: #c7491f; }
@@ -71,6 +74,7 @@ button {
 
 .home {
   width: 100%;
+  min-height: 813px;
   height: 100vh;
   background: url("../images/background@3x.png");
   background-repeat: no-repeat;
@@ -99,7 +103,7 @@ button {
     position: absolute;
     top: 255px;
     left: 152px; }
-  .home button {
+  .home .downloadMitto {
     width: 156px;
     height: 40px;
     top: 379px;
@@ -109,7 +113,7 @@ button {
     border-radius: 2px;
     background-color: #de5628;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
-    .home button p {
+    .home .downloadMitto p {
       width: 114px;
       height: 19px;
       margin: auto;
@@ -117,6 +121,28 @@ button {
       font-size: 16px;
       text-align: left;
       color: #ffffff; }
+  .home .video-box {
+    width: 800px;
+    height: 322px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%); }
+  .home .video-link {
+    width: 207px;
+    height: 52px;
+    border: none;
+    border-radius: 100px;
+    background-color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 16px;
+    text-align: center;
+    color: #de5628;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
+    position: absolute;
+    bottom: 147px;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .description {
   width: 100%;
@@ -258,7 +284,8 @@ button {
   height: 359px;
   background-image: linear-gradient(197deg, #de6221, #f8622c);
   display: block;
-  position: relative; }
+  position: relative;
+  margin-top: 90px; }
   .download .content {
     margin-left: auto;
     margin-right: auto;
