@@ -4,10 +4,13 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  outline: none; }
 
 body {
-  position: relative; }
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden; }
 
 .container {
   margin-left: auto;
@@ -15,12 +18,16 @@ body {
   min-width: 1280px;
   position: relative; }
 
+button {
+  cursor: pointer; }
+
 .navbar {
   position: fixed;
   width: 100%;
   background-color: transparent;
   height: 84px;
-  z-index: 3; }
+  z-index: 3;
+  transition: background-color .5s; }
   .navbar .navbar-left {
     display: inline-block;
     padding-top: 29px;
@@ -38,7 +45,8 @@ body {
     .navbar .navbar-right li {
       display: inline-block;
       margin-left: 48px;
-      margin-top: 22px; }
+      margin-top: 33px;
+      cursor: pointer; }
       .navbar .navbar-right li:last-child {
         width: 105px;
         height: 40px;
@@ -46,11 +54,20 @@ body {
         background-color: #de5628;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
         position: relative;
-        top: -11px; }
-        .navbar .navbar-right li:last-child span {
+        top: -11px;
+        cursor: pointer; }
+        .navbar .navbar-right li:last-child a {
           position: relative;
           left: 22px;
           top: 11px; }
+      .navbar .navbar-right li:last-child:hover {
+        background-color: #c7491f; }
+    .navbar .navbar-right a {
+      text-decoration: none;
+      font-family: "Montserrat";
+      font-size: 16px;
+      text-align: left;
+      color: #ffffff; }
 
 .home {
   width: 100%;
@@ -160,26 +177,389 @@ body {
     background-color: black; }
 
 .prices {
-  border-top: 2px solid black;
   width: 100%;
-  height: 100vh;
   background-color: white;
   display: block;
-  position: relative; }
+  position: relative;
+  margin-bottom: 118px; }
+  .prices .title {
+    width: 100%;
+    font-family: "Bitter";
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+    margin: 70px auto 12px; }
+  .prices .prices-description-1 {
+    width: 629px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: center;
+    color: #333333;
+    margin: 0 auto 12px auto; }
+  .prices .full-price-list {
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 16px;
+    text-align: center;
+    color: #de5628;
+    margin-bottom: 50px;
+    cursor: pointer; }
+  .prices .options {
+    margin: 0 auto;
+    width: 847px; }
+    .prices .options .option-block {
+      width: 184px;
+      height: 166px;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 0 12px;
+      position: relative; }
+    .prices .options .brown {
+      background-image: linear-gradient(204deg, rgba(208, 159, 95, 0.1), rgba(165, 92, 29, 0.1)); }
+    .prices .options .silver {
+      background-image: linear-gradient(204deg, rgba(188, 188, 188, 0.1), rgba(124, 124, 124, 0.1)); }
+    .prices .options .gold {
+      background-image: linear-gradient(204deg, rgba(225, 180, 47, 0.1), rgba(250, 187, 0, 0.1)); }
+    .prices .options .platinum {
+      background-image: linear-gradient(204deg, rgba(135, 138, 145, 0.1), rgba(15, 46, 119, 0.1)); }
+    .prices .options .option-image {
+      width: 50px;
+      height: 52px;
+      object-fit: contain;
+      position: absolute;
+      top: -27px;
+      left: 64px; }
+    .prices .options .option-top {
+      font-family: "Montserrat";
+      font-size: 16px;
+      text-align: center;
+      margin-top: 51px; }
+    .prices .options .option-middle {
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.43;
+      text-align: center;
+      color: #333333;
+      margin-top: 8px; }
+    .prices .options .option-bottom {
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.25;
+      text-align: center;
+      color: rgba(51, 51, 51, 0.75);
+      margin-top: 16px; }
 
 .download {
   width: 100%;
-  height: 100vh;
-  background-color: pink;
+  height: 359px;
+  background-image: linear-gradient(197deg, #de6221, #f8622c);
   display: block;
   position: relative; }
+  .download .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .download .content .vr {
+      width: 2px;
+      height: 263px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 48px 0; }
+    .download .content .left {
+      width: 466px; }
+      .download .content .left .label {
+        width: 260px;
+        height: 38px;
+        font-family: "Bitter";
+        font-size: 32px;
+        text-align: left;
+        color: #fff4e0; }
+      .download .content .left .label-description {
+        width: 466px;
+        height: 78px;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.63;
+        text-align: left;
+        color: #fff4e0;
+        margin: 19px 0 32px; }
+      .download .content .left button {
+        width: 207px;
+        height: 52px;
+        border: none;
+        border-radius: 100px;
+        background-color: #ffffff;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24); }
+        .download .content .left button span {
+          width: 114px;
+          height: 19px;
+          font-family: "Montserrat";
+          font-size: 16px;
+          text-align: left;
+          color: #de5628;
+          line-height: 52px; }
+        .download .content .left button .icon-download {
+          object-fit: contain;
+          color: #de5628;
+          margin-left: 2px;
+          position: relative;
+          top: 5px; }
+      .download .content .left .system {
+        margin-top: 21px; }
+        .download .content .left .system .label-system {
+          width: 83px;
+          height: 22px;
+          font-family: "Montserrat";
+          font-size: 14px;
+          line-height: 1.57;
+          text-align: left;
+          color: #8e3a19;
+          margin-right: 11px; }
+        .download .content .left .system .logo-windows {
+          display: inline; }
+    .download .content .right {
+      margin-left: 95px;
+      width: 371px; }
+      .download .content .right .circle {
+        width: 24px;
+        height: 24px;
+        background-color: #fff3ee;
+        color: #de5628;
+        border-radius: 100%;
+        position: relative;
+        margin-right: 16px;
+        line-height: 24px;
+        text-align: center; }
+      .download .content .right .label-package {
+        width: 392px;
+        height: 22px;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.38;
+        text-align: left;
+        color: #fff4e0;
+        margin-bottom: 5px; }
+      .download .content .right .package-content {
+        height: 22px;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.38;
+        text-align: left;
+        color: #fff4e0;
+        margin-top: 19px; }
+      .download .content .right .package-download {
+        margin-top: 3px;
+        margin-left: 45px; }
+        .download .content .right .package-download .package-download-content {
+          width: 141px;
+          height: 22px;
+          font-family: "Montserrat";
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.57;
+          text-align: left;
+          color: #fbcb35;
+          margin-right: 5px;
+          cursor: pointer; }
 
 .contact {
-  width: 100%;
-  height: 100vh;
-  background-color: green;
-  display: block;
-  position: relative; }
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  display: flex;
+  position: relative;
+  margin-bottom: 50px;
+  overflow: hidden; }
+  .contact .left {
+    width: 50%;
+    margin-top: 164px;
+    display: inline-block;
+    padding-left: 152px;
+    position: relative; }
+    .contact .left .contact-label {
+      width: 290px;
+      height: 84px;
+      font-family: "Bitter";
+      font-size: 32px;
+      line-height: 1.31;
+      text-align: left;
+      color: #3e534f;
+      margin-bottom: 33px; }
+    .contact .left .contact-description {
+      width: 476px;
+      height: 104px;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.63;
+      text-align: left;
+      color: #5a7f78;
+      margin-bottom: 34px; }
+    .contact .left .contact-details-email {
+      width: 177px;
+      height: 26px;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.63;
+      text-align: left;
+      color: #333333; }
+    .contact .left .contact-details-person {
+      height: 52px;
+      font-family: "Montserrat";
+      font-size: 16px;
+      line-height: 1.63;
+      text-align: left;
+      color: #333333;
+      color: #333333;
+      font-weight: 500;
+      margin-top: 12px; }
+  .contact .right {
+    width: 50%;
+    margin-top: 164px;
+    display: inline-block;
+    padding-left: 50px;
+    position: relative; }
+    .contact .right .contact-form {
+      width: 476px;
+      height: 630px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+      position: relative;
+      display: block;
+      overflow: hidden;
+      z-index: 2; }
+      .contact .right .contact-form .contact-form-image {
+        position: absolute;
+        right: 0;
+        top: 33px; }
+      .contact .right .contact-form .contact-form-label {
+        position: relative;
+        font-family: "Montserrat";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.44;
+        text-align: left;
+        color: #3e534f;
+        display: block;
+        padding-top: 36px;
+        padding-left: 32px;
+        margin-bottom: 12px; }
+      .contact .right .contact-form .contact-form-description {
+        position: relative;
+        width: 329px;
+        height: 78px;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.63;
+        text-align: left;
+        color: #5a7f78;
+        padding-left: 32px;
+        margin-bottom: 52px;
+        display: block; }
+      .contact .right .contact-form form {
+        position: relative; }
+        .contact .right .contact-form form input {
+          display: block;
+          margin-left: 32px;
+          margin-bottom: 24px;
+          z-index: 3;
+          position: relative; }
+        .contact .right .contact-form form input[type="email"] {
+          width: 412px;
+          height: 40px;
+          border: none;
+          border-radius: 2px;
+          background-color: #f8fdfc;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 #97d1c6;
+          font-family: "Montserrat";
+          font-size: 16px;
+          line-height: 1.63;
+          text-align: left;
+          color: #3e534f;
+          padding: 0 15px;
+          z-index: 3;
+          position: relative; }
+        .contact .right .contact-form form input[type="number"] {
+          width: 412px;
+          height: 40px;
+          border: none;
+          border-radius: 2px;
+          background-color: #f8fdfc;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 #97d1c6;
+          font-family: "Montserrat";
+          font-size: 16px;
+          line-height: 1.63;
+          text-align: left;
+          color: rgba(90, 127, 120, 0.52);
+          padding: 0 15px;
+          z-index: 3;
+          position: relative; }
+        .contact .right .contact-form form textarea {
+          width: 412px;
+          height: 194px;
+          border-radius: 2px;
+          background-color: #f8fdfc;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 #97d1c6;
+          font-family: "Montserrat";
+          font-size: 16px;
+          line-height: 1.63;
+          text-align: left;
+          color: rgba(90, 127, 120, 0.52);
+          padding: 15px 15px;
+          margin-left: 32px;
+          z-index: 3;
+          position: relative; }
+        .contact .right .contact-form form input:focus,
+        .contact .right .contact-form form textarea:focus {
+          border: solid 1px #41a38e; }
+        .contact .right .contact-form form button {
+          width: 162px;
+          height: 40px;
+          border: none;
+          border-radius: 2px;
+          background-color: #de5628;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+          font-family: "Montserrat";
+          font-size: 16px;
+          text-align: center;
+          color: #ffffff;
+          margin-top: 32px;
+          margin-left: 278px;
+          z-index: 3;
+          position: relative; }
+        .contact .right .contact-form form button:hover {
+          background-color: #c7491f; }
+      .contact .right .contact-form .additional-background-2 {
+        width: 1000px;
+        height: 265px;
+        transform: skew(-75deg);
+        background-image: linear-gradient(to bottom, #e3f6f2, #eff9f7);
+        z-index: 2;
+        position: relative;
+        top: -234px; }
+
+.additional-background-1 {
+  height: 719px;
+  width: 300%;
+  background-image: linear-gradient(to bottom, #ffffff, #eff9f7);
+  z-index: 1;
+  position: relative;
+  transform: skew(-84deg);
+  margin-top: -416px;
+  overflow: hidden; }
 
 .container {
   width: 90%;
