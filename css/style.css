@@ -15,11 +15,28 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  min-width: 1280px;
+  min-width: 1200px;
   position: relative; }
 
 button {
   cursor: pointer; }
+
+.white-button {
+  width: 207px;
+  height: 52px;
+  border: none;
+  border-radius: 100px;
+  background-color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 52px;
+  text-align: center;
+  color: #de5628;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24); }
+
+.white-button:hover {
+  background-color: #ffeee9;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.34), 0 2px 14px 0 rgba(0, 0, 0, 0.24); }
 
 .navbar {
   position: fixed;
@@ -64,7 +81,7 @@ button {
           text-align: center;
           top: 11px; }
       .navbar .navbar-right li:last-child:hover {
-        background-color: #c7491f; }
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25); }
     .navbar .navbar-right a {
       text-decoration: none;
       font-family: "Montserrat";
@@ -92,6 +109,13 @@ button {
     position: absolute;
     top: 133px;
     left: 152px; }
+    @media all and (max-width: 1200px) {
+      .home .title {
+        left: 61px;
+        top: 101px;
+        width: 347px;
+        height: 88px;
+        font-size: 36px; } }
   .home .title-second {
     width: 558px;
     height: 78px;
@@ -103,6 +127,12 @@ button {
     position: absolute;
     top: 255px;
     left: 152px; }
+    @media all and (max-width: 1200px) {
+      .home .title-second {
+        width: 323px;
+        height: 130px;
+        top: 208px;
+        left: 61px; } }
   .home .downloadMitto {
     width: 156px;
     height: 40px;
@@ -121,28 +151,29 @@ button {
       font-size: 16px;
       text-align: left;
       color: #ffffff; }
+    @media all and (max-width: 1200px) {
+      .home .downloadMitto {
+        top: 372px;
+        left: 61px; } }
+  .home .downloadMitto:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25); }
   .home .video-box {
-    width: 800px;
+    width: 768px;
     height: 322px;
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%); }
   .home .video-link {
-    width: 207px;
-    height: 52px;
-    border: none;
-    border-radius: 100px;
-    background-color: #ffffff;
-    font-family: "Montserrat";
-    font-size: 16px;
-    text-align: center;
-    color: #de5628;
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
     position: absolute;
     bottom: 147px;
     left: 50%;
     transform: translateX(-50%); }
+    .home .video-link .triangle {
+      object-fit: contain;
+      margin-left: 14px;
+      position: relative;
+      top: 7px; }
 
 .description {
   width: 100%;
@@ -152,55 +183,72 @@ button {
   color: #333333;
   display: block;
   position: relative; }
+  .description .left {
+    width: 49%;
+    display: inline-block;
+    position: relative; }
+  .description .right {
+    width: 49%;
+    display: inline-block;
+    position: relative; }
   .description .paragraph-first {
-    top: 153px;
-    left: 235px;
-    position: absolute;
+    margin-top: 153px;
+    margin-left: 235px;
     width: 97px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
+    @media all and (max-width: 1200px) {
+      .description .paragraph-first {
+        margin-left: 30%; } }
   .description .paragraph-first-second {
-    top: 196px;
-    left: 235px;
-    position: absolute;
+    margin-top: 14px;
+    margin-left: 235px;
     width: 309px;
     height: 78px;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
     text-align: left; }
+    @media all and (max-width: 1200px) {
+      .description .paragraph-first-second {
+        margin-left: 30%; } }
   .description .paragraph-second {
-    top: 303px;
-    left: 235px;
-    position: absolute;
+    margin-top: 31px;
+    margin-left: 235px;
     width: 82px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
+    @media all and (max-width: 1200px) {
+      .description .paragraph-second {
+        margin-left: 30%; } }
   .description .paragraph-third {
-    top: 363px;
-    left: 235px;
-    position: absolute;
+    margin-top: 31px;
+    margin-left: 235px;
     width: 221px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
+    @media all and (max-width: 1200px) {
+      .description .paragraph-third {
+        margin-left: 30%; } }
   .description .paragraph-fourth {
-    top: 423px;
-    left: 235px;
-    position: absolute;
+    margin-top: 31px;
+    margin-left: 235px;
     width: 162px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
+    @media all and (max-width: 1200px) {
+      .description .paragraph-fourth {
+        margin-left: 30%; } }
   .description .image-description {
     top: 125px;
-    left: 611px;
-    position: absolute;
     width: 541px;
     height: 440px;
-    background-color: black; }
+    background-color: black;
+    position: relative; }
 
 .prices {
   width: 100%;
@@ -317,27 +365,20 @@ button {
         text-align: left;
         color: #fff4e0;
         margin: 19px 0 32px; }
-      .download .content .left button {
-        width: 207px;
-        height: 52px;
-        border: none;
-        border-radius: 100px;
-        background-color: #ffffff;
-        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24); }
-        .download .content .left button span {
-          width: 114px;
-          height: 19px;
-          font-family: "Montserrat";
-          font-size: 16px;
-          text-align: left;
-          color: #de5628;
-          line-height: 52px; }
-        .download .content .left button .icon-download {
-          object-fit: contain;
-          color: #de5628;
-          margin-left: 2px;
-          position: relative;
-          top: 5px; }
+      .download .content .left button span {
+        width: 114px;
+        height: 19px;
+        font-family: "Montserrat";
+        font-size: 16px;
+        text-align: left;
+        color: #de5628;
+        line-height: 52px; }
+      .download .content .left button .icon-download {
+        object-fit: contain;
+        color: #de5628;
+        margin-left: 2px;
+        position: relative;
+        top: 5px; }
       .download .content .left .system {
         margin-top: 21px; }
         .download .content .left .system .label-system {
@@ -568,7 +609,7 @@ button {
           z-index: 3;
           position: relative; }
         .contact .right .contact-form form button:hover {
-          background-color: #c7491f; }
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25); }
       .contact .right .contact-form .additional-background-2 {
         width: 1000px;
         height: 265px;
@@ -587,109 +628,5 @@ button {
   transform: skew(-84deg);
   margin-top: -416px;
   overflow: hidden; }
-
-.container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
-  @media only screen and (min-width: 33.75em) {
-    .container {
-      width: 80%; } }
-  @media only screen and (min-width: 60em) {
-    .container {
-      width: 75%;
-      max-width: 60rem; } }
-
-.row {
-  position: relative;
-  width: 100%; }
-
-.row [class^="col"] {
-  float: left;
-  margin: 0.5rem 2%;
-  min-height: 0.125rem; }
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-  width: 96%; }
-
-.col-1-sm {
-  width: 4.3333333333%; }
-
-.col-2-sm {
-  width: 12.6666666667%; }
-
-.col-3-sm {
-  width: 21%; }
-
-.col-4-sm {
-  width: 29.3333333333%; }
-
-.col-5-sm {
-  width: 37.6666666667%; }
-
-.col-6-sm {
-  width: 46%; }
-
-.col-7-sm {
-  width: 54.3333333333%; }
-
-.col-8-sm {
-  width: 62.6666666667%; }
-
-.col-9-sm {
-  width: 71%; }
-
-.col-10-sm {
-  width: 79.3333333333%; }
-
-.col-11-sm {
-  width: 87.6666666667%; }
-
-.col-12-sm {
-  width: 96%; }
-
-@media only screen and (min-width: 45em) {
-  .col-1 {
-    width: 4.3333333333%; }
-  .col-2 {
-    width: 12.6666666667%; }
-  .col-3 {
-    width: 21%; }
-  .col-4 {
-    width: 29.3333333333%; }
-  .col-5 {
-    width: 37.6666666667%; }
-  .col-6 {
-    width: 46%; }
-  .col-7 {
-    width: 54.3333333333%; }
-  .col-8 {
-    width: 62.6666666667%; }
-  .col-9 {
-    width: 71%; }
-  .col-10 {
-    width: 79.3333333333%; }
-  .col-11 {
-    width: 87.6666666667%; }
-  .col-12 {
-    width: 96%; }
-  .hidden-sm {
-    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

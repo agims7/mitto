@@ -3,6 +3,9 @@
 //colors:
 $brownish-orange: #de5628;
 $texts-color: #333333;
+$breakpointDesktop: 1200px;
+$breakpointTable: 768px;
+$breakpointMobile: 320px;
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -20,12 +23,31 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    min-width: 1280px;
+    min-width: 1200px;
     position: relative;
 }
 
 button {
     cursor: pointer;
+}
+
+.white-button {
+    width: 207px;
+    height: 52px;
+    border: none;
+    border-radius: 100px;
+    background-color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 52px;
+    text-align: center;
+    color: #de5628;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
+}
+
+.white-button:hover {
+    background-color: #ffeee9;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.34), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
 }
 
 ///////// NAVBAR /////////
@@ -76,7 +98,7 @@ button {
                 }
             }
             &:last-child:hover {
-                background-color: #c7491f;
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
             }
         }
         a {
@@ -110,6 +132,13 @@ button {
         position: absolute;
         top: 133px;
         left: 152px;
+        @media all and (max-width: $breakpointDesktop) {
+            left: 61px;
+            top: 101px;
+            width: 347px;
+            height: 88px;
+            font-size: 36px;
+        }
     }
     .title-second {
         width: 558px;
@@ -122,6 +151,12 @@ button {
         position: absolute;
         top: 255px;
         left: 152px;
+        @media all and (max-width: $breakpointDesktop) {
+            width: 323px;
+            height: 130px;
+            top: 208px;
+            left: 61px;
+        }
     }
     .downloadMitto {
         width: 156px;
@@ -142,9 +177,16 @@ button {
             text-align: left;
             color: #ffffff;
         }
+        @media all and (max-width: $breakpointDesktop) {
+            top: 372px;
+            left: 61px;
+        }
+    }
+    .downloadMitto:hover {
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
     }
     .video-box {
-        width: 800px;
+        width: 768px;
         height: 322px;
         position: absolute;
         bottom: -10px;
@@ -152,20 +194,16 @@ button {
         transform: translateX(-50%);
     }
     .video-link {
-        width: 207px;
-        height: 52px;
-        border: none;
-        border-radius: 100px;
-        background-color: #ffffff;
-        font-family: "Montserrat";
-        font-size: 16px;
-        text-align: center;
-        color: #de5628;
-        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
         position: absolute;
         bottom: 147px;
         left: 50%;
         transform: translateX(-50%);
+        .triangle {
+            object-fit: contain;
+            margin-left: 14px;
+            position: relative;
+            top: 7px;
+        }
     }
 }
 
@@ -177,60 +215,79 @@ button {
     color: $texts-color;
     display: block;
     position: relative;
+    .left {
+        width: 49%;
+        display: inline-block;
+        position: relative;
+    }
+    .right {
+        width: 49%;
+        display: inline-block;
+        position: relative;
+    }
     .paragraph-first {
-        top: 153px;
-        left: 235px;
-        position: absolute;
+        margin-top: 153px;
+        margin-left: 235px;
         width: 97px;
         height: 29px;
         font-size: 24px;
         text-align: left;
+        @media all and (max-width: $breakpointDesktop) {
+            margin-left: 30%;
+        }
     }
     .paragraph-first-second {
-        top: 196px;
-        left: 235px;
-        position: absolute;
+        margin-top: 14px;
+        margin-left: 235px;
         width: 309px;
         height: 78px;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.63;
         text-align: left;
+        @media all and (max-width: $breakpointDesktop) {
+            margin-left: 30%;
+        }
     }
     .paragraph-second {
-        top: 303px;
-        left: 235px;
-        position: absolute;
+        margin-top: 31px;
+        margin-left: 235px;
         width: 82px;
         height: 29px;
         font-size: 24px;
         text-align: left;
+        @media all and (max-width: $breakpointDesktop) {
+            margin-left: 30%;
+        }
     }
     .paragraph-third {
-        top: 363px;
-        left: 235px;
-        position: absolute;
+        margin-top: 31px;
+        margin-left: 235px;
         width: 221px;
         height: 29px;
         font-size: 24px;
         text-align: left;
+        @media all and (max-width: $breakpointDesktop) {
+            margin-left: 30%;
+        }
     }
     .paragraph-fourth {
-        top: 423px;
-        left: 235px;
-        position: absolute;
+        margin-top: 31px;
+        margin-left: 235px;
         width: 162px;
         height: 29px;
         font-size: 24px;
         text-align: left;
+        @media all and (max-width: $breakpointDesktop) {
+            margin-left: 30%;
+        }
     }
     .image-description {
         top: 125px;
-        left: 611px;
-        position: absolute;
         width: 541px;
         height: 440px;
         background-color: black;
+        position: relative;
     }
 }
 
@@ -367,12 +424,6 @@ button {
                 margin: 19px 0 32px;
             }
             button {
-                width: 207px;
-                height: 52px;
-                border: none;
-                border-radius: 100px;
-                background-color: #ffffff;
-                box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
                 span {
                     width: 114px;
                     height: 19px;
@@ -646,7 +697,7 @@ button {
                     position: relative;
                 }
                 button:hover {
-                    background-color: #c7491f;
+                    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
                 }
             }
             .additional-background-2 {
@@ -671,146 +722,4 @@ button {
     transform: skew(-84deg);
     margin-top: -416px;
     overflow: hidden;
-}
-
-/////////////////// SIMPLE GRID
-// grid
-$width: 96%;
-$gutter: 4%;
-$breakpoint-small: 33.75em; // 540px
-$breakpoint-med: 45em; // 720px
-$breakpoint-large: 60em; // 960px
-.container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    @media only screen and (min-width: $breakpoint-small) {
-        width: 80%;
-    }
-    @media only screen and (min-width: $breakpoint-large) {
-        width: 75%;
-        max-width: 60rem;
-    }
-}
-
-.row {
-    position: relative;
-    width: 100%;
-}
-
-.row [class^="col"] {
-    float: left;
-    margin: 0.5rem 2%;
-    min-height: 0.125rem;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
-    width: $width;
-}
-
-.col-1-sm {
-    width: ($width / 12) - ($gutter * 11 / 12);
-}
-
-.col-2-sm {
-    width: ($width / 6) - ($gutter * 10 / 12);
-}
-
-.col-3-sm {
-    width: ($width / 4) - ($gutter * 9 / 12);
-}
-
-.col-4-sm {
-    width: ($width / 3) - ($gutter * 8 / 12);
-}
-
-.col-5-sm {
-    width: ($width / (12 / 5)) - ($gutter * 7 / 12);
-}
-
-.col-6-sm {
-    width: ($width / 2) - ($gutter * 6 / 12);
-}
-
-.col-7-sm {
-    width: ($width / (12 / 7)) - ($gutter * 5 / 12);
-}
-
-.col-8-sm {
-    width: ($width / (12 / 8)) - ($gutter * 4 / 12);
-}
-
-.col-9-sm {
-    width: ($width / (12 / 9)) - ($gutter * 3 / 12);
-}
-
-.col-10-sm {
-    width: ($width / (12 / 10)) - ($gutter * 2 / 12);
-}
-
-.col-11-sm {
-    width: ($width / (12 / 11)) - ($gutter * 1 / 12);
-}
-
-.col-12-sm {
-    width: $width;
-}
-
-@media only screen and (min-width: $breakpoint-med) {
-    .col-1 {
-        width: ($width / 12) - ($gutter * 11 / 12);
-    }
-    .col-2 {
-        width: ($width / 6) - ($gutter * 10 / 12);
-    }
-    .col-3 {
-        width: ($width / 4) - ($gutter * 9 / 12);
-    }
-    .col-4 {
-        width: ($width / 3) - ($gutter * 8 / 12);
-    }
-    .col-5 {
-        width: ($width / (12 / 5)) - ($gutter * 7 / 12);
-    }
-    .col-6 {
-        width: ($width / 2) - ($gutter * 6 / 12);
-    }
-    .col-7 {
-        width: ($width / (12 / 7)) - ($gutter * 5 / 12);
-    }
-    .col-8 {
-        width: ($width / (12 / 8)) - ($gutter * 4 / 12);
-    }
-    .col-9 {
-        width: ($width / (12 / 9)) - ($gutter * 3 / 12);
-    }
-    .col-10 {
-        width: ($width / (12 / 10)) - ($gutter * 2 / 12);
-    }
-    .col-11 {
-        width: ($width / (12 / 11)) - ($gutter * 1 / 12);
-    }
-    .col-12 {
-        width: $width;
-    }
-    .hidden-sm {
-        display: block;
-    }
 }
