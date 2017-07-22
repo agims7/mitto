@@ -50,17 +50,40 @@ button {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.34), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
 }
 
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.center-block {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
 ///////// NAVBAR /////////
 .navbar {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background-color: transparent;
     height: 84px;
     z-index: 3;
     transition: background-color .5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .navbar-left {
-        display: inline-block;
-        padding-top: 29px;
         padding-left: 25px;
         img {
             height: 27px;
@@ -69,7 +92,6 @@ button {
         }
     }
     .navbar-right {
-        float: right;
         margin-right: 24px;
         color: white;
         font-size: 16px;
@@ -208,79 +230,50 @@ button {
 }
 
 .description {
-    width: 100%;
+    max-width: 1200px;
     height: 625px;
     background-color: white;
     font-family: 'Montserrat';
     color: $texts-color;
-    display: block;
+    display: flex;
+    justify-content: center;
     position: relative;
-    .left {
-        width: 49%;
-        display: inline-block;
-        position: relative;
-    }
-    .right {
-        width: 49%;
-        display: inline-block;
-        position: relative;
-    }
     .paragraph-first {
         margin-top: 153px;
-        margin-left: 235px;
         width: 97px;
         height: 29px;
         font-size: 24px;
         text-align: left;
-        @media all and (max-width: $breakpointDesktop) {
-            margin-left: 30%;
-        }
     }
     .paragraph-first-second {
         margin-top: 14px;
-        margin-left: 235px;
         width: 309px;
         height: 78px;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.63;
         text-align: left;
-        @media all and (max-width: $breakpointDesktop) {
-            margin-left: 30%;
-        }
     }
     .paragraph-second {
         margin-top: 31px;
-        margin-left: 235px;
         width: 82px;
         height: 29px;
         font-size: 24px;
         text-align: left;
-        @media all and (max-width: $breakpointDesktop) {
-            margin-left: 30%;
-        }
     }
     .paragraph-third {
         margin-top: 31px;
-        margin-left: 235px;
         width: 221px;
         height: 29px;
         font-size: 24px;
         text-align: left;
-        @media all and (max-width: $breakpointDesktop) {
-            margin-left: 30%;
-        }
     }
     .paragraph-fourth {
         margin-top: 31px;
-        margin-left: 235px;
         width: 162px;
         height: 29px;
         font-size: 24px;
         text-align: left;
-        @media all and (max-width: $breakpointDesktop) {
-            margin-left: 30%;
-        }
     }
     .image-description {
         top: 125px;
@@ -325,13 +318,12 @@ button {
         cursor: pointer;
     }
     .options {
-        margin: 0 auto;
-        width: 847px;
+      display: flex;
+      justify-content: center;
         .option-block {
             width: 184px;
             height: 166px;
             border-radius: 5px;
-            display: inline-block;
             margin: 0 12px;
             position: relative;
         }
@@ -386,12 +378,11 @@ button {
     width: 100%;
     height: 359px;
     background-image: linear-gradient(197deg, #de6221, #f8622c);
-    display: block;
+    display: flex;
+    justify-content: center;
     position: relative;
     margin-top: 90px;
     .content {
-        margin-left: auto;
-        margin-right: auto;
         width: 1200px;
         display: flex;
         justify-content: center;
@@ -403,7 +394,6 @@ button {
             margin: 48px 0;
         }
         .left {
-            width: 466px;
             .label {
                 width: 260px;
                 height: 38px;
@@ -422,6 +412,10 @@ button {
                 text-align: left;
                 color: #fff4e0;
                 margin: 19px 0 32px;
+                @media all and (max-width: $breakpointDesktop) {
+                  width: 348px;
+                }
+                width: 348px;
             }
             button {
                 span {
@@ -459,8 +453,6 @@ button {
             }
         }
         .right {
-            margin-left: 95px;
-            width: 371px;
             .circle {
                 width: 24px;
                 height: 24px;
@@ -522,12 +514,22 @@ button {
     position: relative;
     margin-bottom: 50px;
     overflow: hidden;
+    @media all and (max-width: $breakpointDesktop) {
+      display: block;
+    }
+    .horizontal-block {
+      @media all and (max-width: $breakpointDesktop) {
+        padding: 0 24px;
+        width: 100%;
+      }
+    }
     .left {
-        width: 50%;
         margin-top: 164px;
-        display: inline-block;
-        padding-left: 152px;
-        position: relative;
+        @media all and (max-width: $breakpointDesktop) {
+          margin-top: 48px;
+          display: flex;
+          width: 100%;
+        }
         .contact-label {
             width: 290px;
             height: 84px;
@@ -537,6 +539,11 @@ button {
             text-align: left;
             color: #3e534f;
             margin-bottom: 33px;
+            @media all and (max-width: $breakpointDesktop) {
+      width: 558px;
+  height: 42px;
+  margin-bottom: 24px;
+    }
         }
         .contact-description {
             width: 476px;
@@ -572,11 +579,12 @@ button {
         }
     }
     .right {
-        width: 50%;
         margin-top: 164px;
-        display: inline-block;
-        padding-left: 50px;
-        position: relative;
+        @media all and (max-width: $breakpointDesktop) {
+          margin-top: 48px;
+          display: flex;
+          width: 100%;
+        }
         .contact-form {
             width: 476px;
             height: 630px;
@@ -587,6 +595,9 @@ button {
             display: block;
             overflow: hidden;
             z-index: 2;
+            @media all and (max-width: $breakpointDesktop) {
+              width: 100%;
+            }
             .contact-form-image {
                 position: absolute;
                 right: 0;
@@ -618,6 +629,9 @@ button {
                 padding-left: 32px;
                 margin-bottom: 52px;
                 display: block;
+                @media all and (max-width: $breakpointDesktop) {
+                  width: 80%;
+                }
             }
             form {
                 position: relative;

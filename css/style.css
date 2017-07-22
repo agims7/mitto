@@ -38,23 +38,42 @@ button {
   background-color: #ffeee9;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.34), 0 2px 14px 0 rgba(0, 0, 0, 0.24); }
 
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+
+.center-block {
+  display: flex;
+  flex-direction: column;
+  align-items: left; }
+
 .navbar {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: transparent;
   height: 84px;
   z-index: 3;
-  transition: background-color .5s; }
+  transition: background-color .5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   .navbar .navbar-left {
-    display: inline-block;
-    padding-top: 29px;
     padding-left: 25px; }
     .navbar .navbar-left img {
       height: 27px;
       width: 100px;
       cursor: pointer; }
   .navbar .navbar-right {
-    float: right;
     margin-right: 24px;
     color: white;
     font-size: 16px;
@@ -176,73 +195,46 @@ button {
       top: 7px; }
 
 .description {
-  width: 100%;
+  max-width: 1200px;
   height: 625px;
   background-color: white;
   font-family: 'Montserrat';
   color: #333333;
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative; }
-  .description .left {
-    width: 49%;
-    display: inline-block;
-    position: relative; }
-  .description .right {
-    width: 49%;
-    display: inline-block;
-    position: relative; }
   .description .paragraph-first {
     margin-top: 153px;
-    margin-left: 235px;
     width: 97px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
-    @media all and (max-width: 1200px) {
-      .description .paragraph-first {
-        margin-left: 30%; } }
   .description .paragraph-first-second {
     margin-top: 14px;
-    margin-left: 235px;
     width: 309px;
     height: 78px;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
     text-align: left; }
-    @media all and (max-width: 1200px) {
-      .description .paragraph-first-second {
-        margin-left: 30%; } }
   .description .paragraph-second {
     margin-top: 31px;
-    margin-left: 235px;
     width: 82px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
-    @media all and (max-width: 1200px) {
-      .description .paragraph-second {
-        margin-left: 30%; } }
   .description .paragraph-third {
     margin-top: 31px;
-    margin-left: 235px;
     width: 221px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
-    @media all and (max-width: 1200px) {
-      .description .paragraph-third {
-        margin-left: 30%; } }
   .description .paragraph-fourth {
     margin-top: 31px;
-    margin-left: 235px;
     width: 162px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
-    @media all and (max-width: 1200px) {
-      .description .paragraph-fourth {
-        margin-left: 30%; } }
   .description .image-description {
     top: 125px;
     width: 541px;
@@ -281,13 +273,12 @@ button {
     margin-bottom: 50px;
     cursor: pointer; }
   .prices .options {
-    margin: 0 auto;
-    width: 847px; }
+    display: flex;
+    justify-content: center; }
     .prices .options .option-block {
       width: 184px;
       height: 166px;
       border-radius: 5px;
-      display: inline-block;
       margin: 0 12px;
       position: relative; }
     .prices .options .brown {
@@ -331,12 +322,11 @@ button {
   width: 100%;
   height: 359px;
   background-image: linear-gradient(197deg, #de6221, #f8622c);
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative;
   margin-top: 90px; }
   .download .content {
-    margin-left: auto;
-    margin-right: auto;
     width: 1200px;
     display: flex;
     justify-content: center;
@@ -346,98 +336,97 @@ button {
       height: 263px;
       background-color: rgba(255, 255, 255, 0.1);
       margin: 48px 0; }
-    .download .content .left {
-      width: 466px; }
-      .download .content .left .label {
-        width: 260px;
-        height: 38px;
-        font-family: "Bitter";
-        font-size: 32px;
-        text-align: left;
-        color: #fff4e0; }
-      .download .content .left .label-description {
-        width: 466px;
-        height: 78px;
-        font-family: "Montserrat";
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.63;
-        text-align: left;
-        color: #fff4e0;
-        margin: 19px 0 32px; }
-      .download .content .left button span {
-        width: 114px;
-        height: 19px;
-        font-family: "Montserrat";
-        font-size: 16px;
-        text-align: left;
-        color: #de5628;
-        line-height: 52px; }
-      .download .content .left button .icon-download {
-        object-fit: contain;
-        color: #de5628;
-        margin-left: 2px;
-        position: relative;
-        top: 5px; }
-      .download .content .left .system {
-        margin-top: 21px; }
-        .download .content .left .system .label-system {
-          width: 83px;
-          height: 22px;
-          font-family: "Montserrat";
-          font-size: 14px;
-          line-height: 1.57;
-          text-align: left;
-          color: #8e3a19;
-          margin-right: 11px; }
-        .download .content .left .system .logo-windows {
-          display: inline; }
-    .download .content .right {
-      margin-left: 95px;
-      width: 371px; }
-      .download .content .right .circle {
-        width: 24px;
-        height: 24px;
-        background-color: #fff3ee;
-        color: #de5628;
-        border-radius: 100%;
-        position: relative;
-        margin-right: 16px;
-        line-height: 24px;
-        text-align: center; }
-      .download .content .right .label-package {
-        width: 392px;
+    .download .content .left .label {
+      width: 260px;
+      height: 38px;
+      font-family: "Bitter";
+      font-size: 32px;
+      text-align: left;
+      color: #fff4e0; }
+    .download .content .left .label-description {
+      width: 466px;
+      height: 78px;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.63;
+      text-align: left;
+      color: #fff4e0;
+      margin: 19px 0 32px;
+      width: 348px; }
+      @media all and (max-width: 1200px) {
+        .download .content .left .label-description {
+          width: 348px; } }
+    .download .content .left button span {
+      width: 114px;
+      height: 19px;
+      font-family: "Montserrat";
+      font-size: 16px;
+      text-align: left;
+      color: #de5628;
+      line-height: 52px; }
+    .download .content .left button .icon-download {
+      object-fit: contain;
+      color: #de5628;
+      margin-left: 2px;
+      position: relative;
+      top: 5px; }
+    .download .content .left .system {
+      margin-top: 21px; }
+      .download .content .left .system .label-system {
+        width: 83px;
         height: 22px;
         font-family: "Montserrat";
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.38;
+        font-size: 14px;
+        line-height: 1.57;
         text-align: left;
-        color: #fff4e0;
-        margin-bottom: 5px; }
-      .download .content .right .package-content {
+        color: #8e3a19;
+        margin-right: 11px; }
+      .download .content .left .system .logo-windows {
+        display: inline; }
+    .download .content .right .circle {
+      width: 24px;
+      height: 24px;
+      background-color: #fff3ee;
+      color: #de5628;
+      border-radius: 100%;
+      position: relative;
+      margin-right: 16px;
+      line-height: 24px;
+      text-align: center; }
+    .download .content .right .label-package {
+      width: 392px;
+      height: 22px;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.38;
+      text-align: left;
+      color: #fff4e0;
+      margin-bottom: 5px; }
+    .download .content .right .package-content {
+      height: 22px;
+      font-family: "Montserrat";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.38;
+      text-align: left;
+      color: #fff4e0;
+      margin-top: 19px; }
+    .download .content .right .package-download {
+      margin-top: 3px;
+      margin-left: 45px; }
+      .download .content .right .package-download .package-download-content {
+        width: 141px;
         height: 22px;
         font-family: "Montserrat";
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.38;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.57;
         text-align: left;
-        color: #fff4e0;
-        margin-top: 19px; }
-      .download .content .right .package-download {
-        margin-top: 3px;
-        margin-left: 45px; }
-        .download .content .right .package-download .package-download-content {
-          width: 141px;
-          height: 22px;
-          font-family: "Montserrat";
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 1.57;
-          text-align: left;
-          color: #fbcb35;
-          margin-right: 5px;
-          cursor: pointer; }
+        color: #fbcb35;
+        margin-right: 5px;
+        cursor: pointer; }
 
 .contact {
   max-width: 1200px;
@@ -448,12 +437,20 @@ button {
   position: relative;
   margin-bottom: 50px;
   overflow: hidden; }
+  @media all and (max-width: 1200px) {
+    .contact {
+      display: block; } }
+  @media all and (max-width: 1200px) {
+    .contact .horizontal-block {
+      padding: 0 24px;
+      width: 100%; } }
   .contact .left {
-    width: 50%;
-    margin-top: 164px;
-    display: inline-block;
-    padding-left: 152px;
-    position: relative; }
+    margin-top: 164px; }
+    @media all and (max-width: 1200px) {
+      .contact .left {
+        margin-top: 48px;
+        display: flex;
+        width: 100%; } }
     .contact .left .contact-label {
       width: 290px;
       height: 84px;
@@ -463,6 +460,11 @@ button {
       text-align: left;
       color: #3e534f;
       margin-bottom: 33px; }
+      @media all and (max-width: 1200px) {
+        .contact .left .contact-label {
+          width: 558px;
+          height: 42px;
+          margin-bottom: 24px; } }
     .contact .left .contact-description {
       width: 476px;
       height: 104px;
@@ -493,11 +495,12 @@ button {
       font-weight: 500;
       margin-top: 12px; }
   .contact .right {
-    width: 50%;
-    margin-top: 164px;
-    display: inline-block;
-    padding-left: 50px;
-    position: relative; }
+    margin-top: 164px; }
+    @media all and (max-width: 1200px) {
+      .contact .right {
+        margin-top: 48px;
+        display: flex;
+        width: 100%; } }
     .contact .right .contact-form {
       width: 476px;
       height: 630px;
@@ -508,6 +511,9 @@ button {
       display: block;
       overflow: hidden;
       z-index: 2; }
+      @media all and (max-width: 1200px) {
+        .contact .right .contact-form {
+          width: 100%; } }
       .contact .right .contact-form .contact-form-image {
         position: absolute;
         right: 0;
@@ -537,6 +543,9 @@ button {
         padding-left: 32px;
         margin-bottom: 52px;
         display: block; }
+        @media all and (max-width: 1200px) {
+          .contact .right .contact-form .contact-form-description {
+            width: 80%; } }
       .contact .right .contact-form form {
         position: relative; }
         .contact .right .contact-form form input {
