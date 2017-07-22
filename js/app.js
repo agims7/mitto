@@ -1,13 +1,9 @@
-console.log('cos')
-
 $(document).ready(function() {
     $(window).scroll(function() {
         if ($(document).scrollTop() > (window.innerHeight - 84)) {
             $(".navbar").css("background-color", "#39c0a8");
-            console.log('cos1')
         } else {
             $(".navbar").css("background-color", "transparent");
-            console.log('cos2')
         }
     });
 
@@ -33,4 +29,14 @@ $(document).ready(function() {
             });
         } // End if
     });
+
+    $(".video-link").on('click', function(event) {
+        $(".youtube-container").css("display", "block");
+    });
+
+    $(".youtube-close-icon ").on('click', function(event) {
+        $(".youtube-container").css("display", "none");
+    });
+
+
 });

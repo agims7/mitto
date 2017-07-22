@@ -33,6 +33,11 @@
   </nav>
 
   <section class="home">
+    <div class="youtube-container">
+      <i class="fa fa-times youtube-close-icon"></i>
+      <iframe class="youtube-video" src="https://www.youtube.com/embed/UAaK-GKzAYA" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
     <div class="container">
       <p class="title">Najprostsze przesyłki kurierskie</p>
       <p class="title-second">Naszym celem jest uproszczenie procesu wysyłania paczek do minimum, dlatego Mitto jest najprostszym narzędziem na rynku:
@@ -60,7 +65,9 @@
       </div>
     </div>
     <div class="right">
-      <div class="image-description"></div>
+      <div class="image-description">
+        <img class="image-description-content" src="images/bitmap.png">
+      </div>
     </div>
   </section>
 
@@ -99,11 +106,11 @@
   </section>
   <section id="download" class="download">
     <div class="content">
-      <div class="left">
+      <div class="left left-download">
         <div class="center-block">
           <p class="label">Pobierz aplikację</p>
           <p class="label-description">Mitto+ jest dostępne jako aplikacja desktopowa.
-            <br> Pobierz ją, uruchom plik instalatora i postępuj zgodnie instrukcją instalacji. </p>
+            <br class="mobile-new-line"> Pobierz ją, uruchom plik instalatora i postępuj zgodnie instrukcją instalacji. </p>
           <button class="white-button">
                     <span>Pobierz Mitto+</span>
                     <img class="icon-download" src="images/icon-download.svg" class="Icon-Download">
@@ -115,8 +122,8 @@
         </div>
       </div>
       <div class="vr"></div>
-      <div class="right">
-        <div class="center-block">
+      <div class="right right-download">
+        <div class="center-block right-content-download">
           <p class="label-package">Co znajduje się w pobieranym pakiecie?</p>
           <p class="package-content">
             <i class="circle fa fa-check"></i> Aplikacja dla systemu Windows</p>
@@ -139,17 +146,21 @@
         <p class="contact-label">
           Powiedz nam, czego potrzebujesz
         </p>
-        <p class="contact-description">Mitto+ jest narzędziem, które stworzone jest dla użytkowników, dlatego z radością odpowiemy na Twoje pytania i zastanowimy
-          się wspólnie, jak szybciej i taniej wysyłać Twoje przesyłki.</p>
-        <p class="contact-details-email">
-          kontakt@mittoplus.pl
-        </p>
-        <p class="contact-details-person">
-          Rafał - realcje bizjesowe <br>669 310 350
-        </p>
-        <p class="contact-details-person">
-          Łukasz - realcje bizjesowe <br>512 299 786
-        </p>
+        <div class="mobile-content">
+          <p class="contact-description">Mitto+ jest narzędziem, które stworzone jest dla użytkowników, dlatego z radością odpowiemy na Twoje pytania i
+            zastanowimy się wspólnie, jak szybciej i taniej wysyłać Twoje przesyłki.</p>
+          <div class="mobile-right">
+            <p class="contact-details-email">
+              kontakt@mittoplus.pl
+            </p>
+            <p class="contact-details-person">
+              Rafał - realcje bizjesowe <br>669 310 350
+            </p>
+            <p class="contact-details-person">
+              Łukasz - realcje bizjesowe <br>512 299 786
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="right">
@@ -158,10 +169,10 @@
           <img src="images/group-26-copy.svg" class="contact-form-image">
           <p class="contact-form-label">Napisz do nas</p>
           <p class="contact-form-description">Chcesz z nami wpółpracować? Masz uwagi do działania Mitto+? A może zwyczajnie potrzebujesz pomocy. </p>
-          <form action="/jakis.php">
-            <input type="email" name="email" placeholder="you.email@your.email">
-            <input type="number" name="number" placeholder="Telefon">
-            <textarea name="message" placeholder="Jak możemy Ci pomóc?"></textarea>
+          <form action="mail.php" method="POST">
+            <input required type="email" name="email" placeholder="you.email@your.email">
+            <input required type="tel" name="tel" placeholder="Telefon">
+            <textarea required name="message" placeholder="Jak możemy Ci pomóc?"></textarea>
             <button type="submit">Napisz do nax</button>
           </form>
           <div class="additional-background-2"></div>
@@ -169,7 +180,7 @@
       </div>
     </div>
   </section>
-  <div class="additional-background-1"></div>
+  <!-- <div class="additional-background-1"></div> -->
 </body>
 
 </html>

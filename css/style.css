@@ -9,7 +9,7 @@
 
 body {
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden; }
 
 .container {
@@ -59,7 +59,7 @@ button {
 
 .navbar {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   background-color: transparent;
   height: 84px;
   z-index: 3;
@@ -67,6 +67,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media all and (max-width: 768px) {
+    .navbar {
+      position: absolute; } }
   .navbar .navbar-left {
     padding-left: 25px; }
     .navbar .navbar-left img {
@@ -78,6 +81,9 @@ button {
     color: white;
     font-size: 16px;
     font-weight: 300; }
+    @media all and (max-width: 768px) {
+      .navbar .navbar-right {
+        display: none; } }
     .navbar .navbar-right li {
       display: inline-block;
       margin-left: 48px;
@@ -119,6 +125,34 @@ button {
   display: block;
   position: relative;
   color: white; }
+  @media all and (max-width: 768px) {
+    .home {
+      min-height: auto; } }
+  .home .youtube-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10; }
+    .home .youtube-container .youtube-close-icon {
+      position: fixed;
+      left: 73%;
+      top: 20%;
+      font-size: 40px;
+      color: #de5628;
+      cursor: pointer; }
+    .home .youtube-container .youtube-close-icon:hover {
+      transform: scale(1.2); }
+    .home .youtube-container .youtube-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 854px;
+      height: 480px;
+      box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.75);
+      z-index: 10; }
   .home .title {
     width: 405px;
     height: 100px;
@@ -133,8 +167,13 @@ button {
         left: 61px;
         top: 101px;
         width: 347px;
-        height: 88px;
+        height: auto;
         font-size: 36px; } }
+    @media all and (max-width: 768px) {
+      .home .title {
+        left: 20px;
+        top: 101px;
+        width: 296px; } }
   .home .title-second {
     width: 558px;
     height: 78px;
@@ -152,6 +191,11 @@ button {
         height: 130px;
         top: 208px;
         left: 61px; } }
+    @media all and (max-width: 768px) {
+      .home .title-second {
+        top: 235px;
+        width: 288px;
+        left: 20px; } }
   .home .downloadMitto {
     width: 156px;
     height: 40px;
@@ -162,6 +206,9 @@ button {
     border-radius: 2px;
     background-color: #de5628;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15); }
+    @media all and (max-width: 768px) {
+      .home .downloadMitto {
+        display: none; } }
     .home .downloadMitto p {
       width: 114px;
       height: 19px;
@@ -183,11 +230,17 @@ button {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%); }
+    @media all and (max-width: 768px) {
+      .home .video-box {
+        display: none; } }
   .home .video-link {
     position: absolute;
     bottom: 147px;
     left: 50%;
     transform: translateX(-50%); }
+    @media all and (max-width: 768px) {
+      .home .video-link {
+        display: none; } }
     .home .video-link .triangle {
       object-fit: contain;
       margin-left: 14px;
@@ -203,6 +256,9 @@ button {
   display: flex;
   justify-content: center;
   position: relative; }
+  @media all and (max-width: 768px) {
+    .description {
+      display: none; } }
   .description .paragraph-first {
     margin-top: 153px;
     width: 97px;
@@ -239,8 +295,10 @@ button {
     top: 125px;
     width: 541px;
     height: 440px;
-    background-color: black;
     position: relative; }
+    .description .image-description .image-description-content {
+      width: 100%;
+      height: 100%; }
 
 .prices {
   width: 100%;
@@ -248,6 +306,9 @@ button {
   display: block;
   position: relative;
   margin-bottom: 118px; }
+  @media all and (max-width: 768px) {
+    .prices {
+      margin-bottom: 40px; } }
   .prices .title {
     width: 100%;
     font-family: "Bitter";
@@ -256,7 +317,7 @@ button {
     color: #333333;
     margin: 70px auto 12px; }
   .prices .prices-description-1 {
-    width: 629px;
+    width: auto;
     font-family: "Montserrat";
     font-size: 16px;
     font-weight: 300;
@@ -264,6 +325,9 @@ button {
     text-align: center;
     color: #333333;
     margin: 0 auto 12px auto; }
+    @media all and (max-width: 768px) {
+      .prices .prices-description-1 {
+        padding: 0 12px; } }
   .prices .full-price-list {
     width: 100%;
     font-family: "Montserrat";
@@ -274,12 +338,13 @@ button {
     cursor: pointer; }
   .prices .options {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     .prices .options .option-block {
       width: 184px;
       height: 166px;
       border-radius: 5px;
-      margin: 0 12px;
+      margin: 0 12px 36px 12px;
       position: relative; }
     .prices .options .brown {
       background-image: linear-gradient(204deg, rgba(208, 159, 95, 0.1), rgba(165, 92, 29, 0.1)); }
@@ -320,22 +385,44 @@ button {
 
 .download {
   width: 100%;
-  height: 359px;
+  height: auto;
   background-image: linear-gradient(197deg, #de6221, #f8622c);
   display: flex;
   justify-content: center;
   position: relative;
   margin-top: 90px; }
+  @media all and (max-width: 768px) {
+    .download {
+      margin-top: 35px; } }
   .download .content {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media all and (max-width: 768px) {
+      .download .content {
+        flex-direction: column; } }
+    @media all and (max-width: 768px) {
+      .download .content .left-download {
+        width: 100%; }
+        .download .content .left-download .center-block {
+          align-items: center; } }
+    @media all and (max-width: 768px) {
+      .download .content .right-download {
+        width: 100%; } }
     .download .content .vr {
       width: 2px;
       height: 263px;
       background-color: rgba(255, 255, 255, 0.1);
       margin: 48px 0; }
+      @media all and (max-width: 768px) {
+        .download .content .vr {
+          width: 90%;
+          height: 2px;
+          margin: 32px 25px; } }
+    @media all and (max-width: 768px) {
+      .download .content .left .mobile-new-line {
+        display: none; } }
     .download .content .left .label {
       width: 260px;
       height: 38px;
@@ -343,20 +430,25 @@ button {
       font-size: 32px;
       text-align: left;
       color: #fff4e0; }
+      @media all and (max-width: 768px) {
+        .download .content .left .label {
+          margin-top: 24px; } }
     .download .content .left .label-description {
       width: 466px;
-      height: 78px;
+      height: auto;
       font-family: "Montserrat";
       font-size: 16px;
       font-weight: 300;
       line-height: 1.63;
       text-align: left;
       color: #fff4e0;
-      margin: 19px 0 32px;
-      width: 348px; }
+      margin: 19px 0 32px; }
       @media all and (max-width: 1200px) {
         .download .content .left .label-description {
           width: 348px; } }
+      @media all and (max-width: 768px) {
+        .download .content .left .label-description {
+          width: 75%; } }
     .download .content .left button span {
       width: 114px;
       height: 19px;
@@ -394,6 +486,13 @@ button {
       margin-right: 16px;
       line-height: 24px;
       text-align: center; }
+    @media all and (max-width: 1200px) {
+      .download .content .right .right-content-download {
+        padding-left: 25px; } }
+    @media all and (max-width: 768px) {
+      .download .content .right .right-content-download {
+        padding: 0;
+        width: 90%; } }
     .download .content .right .label-package {
       width: 392px;
       height: 22px;
@@ -404,6 +503,11 @@ button {
       text-align: left;
       color: #fff4e0;
       margin-bottom: 5px; }
+      @media all and (max-width: 768px) {
+        .download .content .right .label-package {
+          width: auto;
+          margin-bottom: 14px;
+          height: auto; } }
     .download .content .right .package-content {
       height: 22px;
       font-family: "Montserrat";
@@ -413,9 +517,18 @@ button {
       text-align: left;
       color: #fff4e0;
       margin-top: 19px; }
+      @media all and (max-width: 768px) {
+        .download .content .right .package-content {
+          margin-bottom: 10px;
+          margin-top: 0;
+          height: auto;
+          line-height: 2; } }
     .download .content .right .package-download {
       margin-top: 3px;
       margin-left: 45px; }
+      @media all and (max-width: 768px) {
+        .download .content .right .package-download {
+          margin-bottom: 32px; } }
       .download .content .right .package-download .package-download-content {
         width: 141px;
         height: 22px;
@@ -439,7 +552,8 @@ button {
   overflow: hidden; }
   @media all and (max-width: 1200px) {
     .contact {
-      display: block; } }
+      display: block;
+      margin-bottom: 0; } }
   @media all and (max-width: 1200px) {
     .contact .horizontal-block {
       padding: 0 24px;
@@ -453,7 +567,6 @@ button {
         width: 100%; } }
     .contact .left .contact-label {
       width: 290px;
-      height: 84px;
       font-family: "Bitter";
       font-size: 32px;
       line-height: 1.31;
@@ -462,12 +575,19 @@ button {
       margin-bottom: 33px; }
       @media all and (max-width: 1200px) {
         .contact .left .contact-label {
-          width: 558px;
-          height: 42px;
-          margin-bottom: 24px; } }
+          width: 100%;
+          margin-bottom: 24px;
+          margin-left: 24px;
+          margin-right: 24px; } }
+    @media all and (max-width: 1200px) {
+      .contact .left .mobile-content {
+        display: flex; } }
+    @media all and (max-width: 768px) {
+      .contact .left .mobile-content {
+        display: block; } }
     .contact .left .contact-description {
       width: 476px;
-      height: 104px;
+      height: auto;
       font-family: "Montserrat";
       font-size: 16px;
       font-weight: 300;
@@ -475,6 +595,24 @@ button {
       text-align: left;
       color: #5a7f78;
       margin-bottom: 34px; }
+      @media all and (max-width: 1200px) {
+        .contact .left .contact-description {
+          width: 50%; } }
+      @media all and (max-width: 768px) {
+        .contact .left .contact-description {
+          width: 100%; } }
+    @media all and (max-width: 1200px) {
+      .contact .left .mobile-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-left: 50px; } }
+    @media all and (max-width: 768px) {
+      .contact .left .mobile-right {
+        width: 100%;
+        align-items: center;
+        padding: 0; } }
     .contact .left .contact-details-email {
       width: 177px;
       height: 26px;
@@ -513,11 +651,19 @@ button {
       z-index: 2; }
       @media all and (max-width: 1200px) {
         .contact .right .contact-form {
-          width: 100%; } }
+          width: 100%;
+          height: 537px;
+          margin-bottom: 50px; } }
+      @media all and (max-width: 768px) {
+        .contact .right .contact-form {
+          height: 660px; } }
       .contact .right .contact-form .contact-form-image {
         position: absolute;
         right: 0;
         top: 33px; }
+        @media all and (max-width: 768px) {
+          .contact .right .contact-form .contact-form-image {
+            top: 65px; } }
       .contact .right .contact-form .contact-form-label {
         position: relative;
         font-family: "Montserrat";
@@ -533,7 +679,7 @@ button {
       .contact .right .contact-form .contact-form-description {
         position: relative;
         width: 329px;
-        height: 78px;
+        height: auto;
         font-family: "Montserrat";
         font-size: 16px;
         font-weight: 300;
@@ -545,7 +691,8 @@ button {
         display: block; }
         @media all and (max-width: 1200px) {
           .contact .right .contact-form .contact-form-description {
-            width: 80%; } }
+            width: 80%;
+            margin-bottom: 28px; } }
       .contact .right .contact-form form {
         position: relative; }
         .contact .right .contact-form form input {
@@ -554,6 +701,15 @@ button {
           margin-bottom: 24px;
           z-index: 3;
           position: relative; }
+          @media all and (max-width: 1200px) {
+            .contact .right .contact-form form input {
+              width: calc(50% - 51px) !important;
+              margin-left: 0;
+              display: inline-block;
+              margin-bottom: 24px; } }
+          @media all and (max-width: 768px) {
+            .contact .right .contact-form form input {
+              width: calc(100% - 64px) !important; } }
         .contact .right .contact-form form input[type="email"] {
           width: 412px;
           height: 40px;
@@ -569,7 +725,15 @@ button {
           padding: 0 15px;
           z-index: 3;
           position: relative; }
-        .contact .right .contact-form form input[type="number"] {
+          @media all and (max-width: 1200px) {
+            .contact .right .contact-form form input[type="email"] {
+              margin-left: 32px;
+              margin-right: 16px; } }
+          @media all and (max-width: 768px) {
+            .contact .right .contact-form form input[type="email"] {
+              margin-right: 32px;
+              font-size: 12px; } }
+        .contact .right .contact-form form input[type="tel"] {
           width: 412px;
           height: 40px;
           border: none;
@@ -584,6 +748,14 @@ button {
           padding: 0 15px;
           z-index: 3;
           position: relative; }
+          @media all and (max-width: 1200px) {
+            .contact .right .contact-form form input[type="tel"] {
+              margin-right: 32px;
+              margin-left: 16px; } }
+          @media all and (max-width: 768px) {
+            .contact .right .contact-form form input[type="tel"] {
+              margin-left: 32px;
+              font-size: 12px; } }
         .contact .right .contact-form form textarea {
           width: 412px;
           height: 194px;
@@ -599,6 +771,13 @@ button {
           margin-left: 32px;
           z-index: 3;
           position: relative; }
+          @media all and (max-width: 1200px) {
+            .contact .right .contact-form form textarea {
+              margin-right: 32px;
+              width: calc(100% - 64px); } }
+          @media all and (max-width: 768px) {
+            .contact .right .contact-form form textarea {
+              font-size: 12px; } }
         .contact .right .contact-form form input:focus,
         .contact .right .contact-form form textarea:focus {
           border: solid 1px #41a38e; }
@@ -617,6 +796,11 @@ button {
           margin-left: 278px;
           z-index: 3;
           position: relative; }
+          @media all and (max-width: 1200px) {
+            .contact .right .contact-form form button {
+              margin-top: 24px;
+              margin-right: 32px;
+              float: right; } }
         .contact .right .contact-form form button:hover {
           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25); }
       .contact .right .contact-form .additional-background-2 {
@@ -627,15 +811,11 @@ button {
         z-index: 2;
         position: relative;
         top: -234px; }
-
-.additional-background-1 {
-  height: 719px;
-  width: 300%;
-  background-image: linear-gradient(to bottom, #ffffff, #eff9f7);
-  z-index: 1;
-  position: relative;
-  transform: skew(-84deg);
-  margin-top: -416px;
-  overflow: hidden; }
+        @media all and (max-width: 1200px) {
+          .contact .right .contact-form .additional-background-2 {
+            height: 601px;
+            transform: skew(-77deg);
+            top: -258px;
+            width: 1200px; } }
 
 /*# sourceMappingURL=style.css.map */
