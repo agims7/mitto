@@ -135,13 +135,6 @@ button {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.75);
     z-index: 10; }
-    .home .youtube-container .youtube-close-icon {
-      position: fixed;
-      left: 73%;
-      top: 20%;
-      font-size: 40px;
-      color: #de5628;
-      cursor: pointer; }
     .home .youtube-container .youtube-close-icon:hover {
       transform: scale(1.2); }
     .home .youtube-container .youtube-video {
@@ -155,7 +148,7 @@ button {
       z-index: 10; }
   .home .title {
     width: 405px;
-    height: 100px;
+    height: auto;
     font-family: 'Bitter';
     font-size: 42px;
     text-align: left;
@@ -167,7 +160,6 @@ button {
         left: 61px;
         top: 101px;
         width: 347px;
-        height: auto;
         font-size: 36px; } }
     @media all and (max-width: 768px) {
       .home .title {
@@ -210,12 +202,12 @@ button {
       .home .downloadMitto {
         display: none; } }
     .home .downloadMitto p {
-      width: 114px;
+      width: auto;
       height: 19px;
       margin: auto;
       font-family: 'Montserrat';
       font-size: 16px;
-      text-align: left;
+      text-align: center;
       color: #ffffff; }
     @media all and (max-width: 1200px) {
       .home .downloadMitto {
@@ -759,6 +751,7 @@ button {
         .contact .right .contact-form form textarea {
           width: 412px;
           height: 194px;
+          border: none;
           border-radius: 2px;
           background-color: #f8fdfc;
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 0 1px 0 #97d1c6;
