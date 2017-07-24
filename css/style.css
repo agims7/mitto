@@ -533,7 +533,8 @@ button {
       @media all and (max-width: 768px) {
         .download .content .right .package-download {
           margin-bottom: 32px; } }
-      .download .content .right .package-download .package-download-content {
+      .download .content .right .package-download .package-download-content,
+      .download .content .right .package-download a {
         width: 141px;
         height: 22px;
         font-family: "Montserrat";
@@ -543,7 +544,8 @@ button {
         text-align: left;
         color: #fbcb35;
         margin-right: 5px;
-        cursor: pointer; }
+        cursor: pointer;
+        text-decoration: none; }
 
 .contact {
   max-width: 1200px;

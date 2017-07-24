@@ -622,7 +622,8 @@ button {
                 @media all and (max-width: $breakpointTablet) {
                     margin-bottom: 32px;
                 }
-                .package-download-content {
+                .package-download-content,
+                a {
                     width: 141px;
                     height: 22px;
                     font-family: "Montserrat";
@@ -633,6 +634,7 @@ button {
                     color: #fbcb35;
                     margin-right: 5px;
                     cursor: pointer;
+                    text-decoration: none;
                 }
             }
         }
