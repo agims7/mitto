@@ -137,13 +137,11 @@ button {
     z-index: 10; }
     .home .youtube-container .youtube-close-icon:hover {
       transform: scale(1.2); }
-    .home .youtube-container .youtube-video {
+    .home .youtube-container #youtube-video {
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 854px;
-      height: 480px;
       box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.75);
       z-index: 10; }
   .home .title {
@@ -168,7 +166,7 @@ button {
         width: 296px; } }
   .home .title-second {
     width: 558px;
-    height: 78px;
+    height: auto;
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 300;
@@ -180,7 +178,6 @@ button {
     @media all and (max-width: 1200px) {
       .home .title-second {
         width: 323px;
-        height: 130px;
         top: 208px;
         left: 61px; } }
     @media all and (max-width: 768px) {
@@ -390,18 +387,19 @@ button {
     max-width: 1200px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
     @media all and (max-width: 768px) {
       .download .content {
         flex-direction: column; } }
     @media all and (max-width: 768px) {
       .download .content .left-download {
-        width: 100%; }
+        width: 100vw; }
         .download .content .left-download .center-block {
           align-items: center; } }
     @media all and (max-width: 768px) {
       .download .content .right-download {
-        width: 100%; } }
+        width: 100vw; } }
     .download .content .vr {
       width: 2px;
       height: 263px;
@@ -440,7 +438,7 @@ button {
           width: 348px; } }
       @media all and (max-width: 768px) {
         .download .content .left .label-description {
-          width: 75%; } }
+          text-align: center; } }
     .download .content .left button span {
       width: 114px;
       height: 19px;
@@ -483,8 +481,7 @@ button {
         padding-left: 25px; } }
     @media all and (max-width: 768px) {
       .download .content .right .right-content-download {
-        padding: 0;
-        width: 90%; } }
+        padding: 0; } }
     .download .content .right .label-package {
       width: 392px;
       height: 22px;

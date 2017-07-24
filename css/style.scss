@@ -164,13 +164,11 @@ button {
         .youtube-close-icon:hover {
             transform: scale(1.2);
         }
-        .youtube-video {
+        #youtube-video {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 854px;
-            height: 480px;
             box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.75);
             z-index: 10;
         }
@@ -198,7 +196,7 @@ button {
     }
     .title-second {
         width: 558px;
-        height: 78px;
+        height: auto;
         font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 300;
@@ -209,7 +207,6 @@ button {
         left: 152px;
         @media all and (max-width: $breakpointDesktop) {
             width: 323px;
-            height: 130px;
             top: 208px;
             left: 61px;
         }
@@ -452,12 +449,13 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         @media all and (max-width: $breakpointTablet) {
             flex-direction: column;
         }
         .left-download {
             @media all and (max-width: $breakpointTablet) {
-                width: 100%;
+                width: 100vw;
                 .center-block {
                     align-items: center;
                 }
@@ -465,7 +463,7 @@ button {
         }
         .right-download {
             @media all and (max-width: $breakpointTablet) {
-                width: 100%;
+                width: 100vw;
             }
         }
         .vr {
@@ -510,7 +508,7 @@ button {
                     width: 348px;
                 }
                 @media all and (max-width: $breakpointTablet) {
-                    width: 75%;
+                    text-align: center;
                 }
             }
             button {
@@ -566,7 +564,6 @@ button {
                 }
                 @media all and (max-width: $breakpointTablet) {
                     padding: 0;
-                    width: 90%;
                 }
             }
             .label-package {
