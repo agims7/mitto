@@ -250,13 +250,13 @@ button {
       display: none; } }
   .description .paragraph-first {
     margin-top: 153px;
-    width: 97px;
+    width: 280px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
   .description .paragraph-first-second {
     margin-top: 14px;
-    width: 309px;
+    width: 280px;
     height: 78px;
     font-size: 16px;
     font-weight: 300;
@@ -264,19 +264,19 @@ button {
     text-align: left; }
   .description .paragraph-second {
     margin-top: 31px;
-    width: 82px;
+    width: 280px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
   .description .paragraph-third {
     margin-top: 31px;
-    width: 221px;
+    width: 280px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
   .description .paragraph-fourth {
     margin-top: 31px;
-    width: 162px;
+    width: 280px;
     height: 29px;
     font-size: 24px;
     text-align: left; }
