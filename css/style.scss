@@ -454,6 +454,7 @@ button {
             flex-direction: column;
         }
         .left-download {
+            width: calc(50% - 1px);
             @media all and (max-width: $breakpointTablet) {
                 width: 100vw;
                 .center-block {
@@ -462,6 +463,7 @@ button {
             }
         }
         .right-download {
+            width: calc(50% - 1px);
             @media all and (max-width: $breakpointTablet) {
                 width: 100vw;
             }
@@ -495,7 +497,7 @@ button {
                 }
             }
             .label-description {
-                width: 466px;
+                width: auto;
                 height: auto;
                 font-family: "Montserrat";
                 font-size: 16px;

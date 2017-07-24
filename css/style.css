@@ -392,14 +392,18 @@ button {
     @media all and (max-width: 768px) {
       .download .content {
         flex-direction: column; } }
-    @media all and (max-width: 768px) {
-      .download .content .left-download {
-        width: 100vw; }
-        .download .content .left-download .center-block {
-          align-items: center; } }
-    @media all and (max-width: 768px) {
-      .download .content .right-download {
-        width: 100vw; } }
+    .download .content .left-download {
+      width: calc(50% - 1px); }
+      @media all and (max-width: 768px) {
+        .download .content .left-download {
+          width: 100vw; }
+          .download .content .left-download .center-block {
+            align-items: center; } }
+    .download .content .right-download {
+      width: calc(50% - 1px); }
+      @media all and (max-width: 768px) {
+        .download .content .right-download {
+          width: 100vw; } }
     .download .content .vr {
       width: 2px;
       height: 263px;
@@ -424,7 +428,7 @@ button {
         .download .content .left .label {
           margin-top: 24px; } }
     .download .content .left .label-description {
-      width: 466px;
+      width: auto;
       height: auto;
       font-family: "Montserrat";
       font-size: 16px;
