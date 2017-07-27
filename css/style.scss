@@ -155,7 +155,8 @@ button {
     position: relative;
     color: white;
     @media all and (max-width: $breakpointTablet) {
-        min-height: auto;
+        height: 514px !important;
+        min-height: 514px !important;
     }
     .youtube-container {
         display: none;
@@ -192,9 +193,9 @@ button {
             font-size: 36px;
         }
         @media all and (max-width: $breakpointTablet) {
-            left: 20px;
-            top: 101px;
+            top: 179px;
             width: 296px;
+            left: 16px;
         }
     }
     .title-second {
@@ -214,9 +215,9 @@ button {
             left: 61px;
         }
         @media all and (max-width: $breakpointTablet) {
-            top: 235px;
+            top: 323px;
             width: 288px;
-            left: 20px;
+            left: 16px;
         }
     }
     .downloadMitto {
@@ -356,6 +357,9 @@ button {
         text-align: center;
         color: $texts-color;
         margin: 70px auto 12px;
+        @media all and (max-width: $breakpointTablet) {
+            margin-top: 64px;
+        }
     }
     .prices-description-1 {
         width: auto;
@@ -468,11 +472,12 @@ button {
         flex-wrap: wrap;
         @media all and (max-width: $breakpointTablet) {
             flex-direction: column;
+            width: 100%;
         }
         .left-download {
             width: calc(50% - 1px);
             @media all and (max-width: $breakpointTablet) {
-                width: 100vw;
+                width: 100%;
                 .center-block {
                     align-items: center;
                 }
@@ -481,7 +486,7 @@ button {
         .right-download {
             width: calc(50% - 1px);
             @media all and (max-width: $breakpointTablet) {
-                width: 100vw;
+                width: 100%;
             }
         }
         .vr {
@@ -490,9 +495,9 @@ button {
             background-color: rgba(255, 255, 255, 0.1);
             margin: 48px 0;
             @media all and (max-width: $breakpointTablet) {
-                width: 90%;
+                width: calc(100% - 32px);
                 height: 2px;
-                margin: 32px 25px;
+                margin: 32px auto;
             }
         }
         .left {
@@ -526,7 +531,10 @@ button {
                     width: 348px;
                 }
                 @media all and (max-width: $breakpointTablet) {
-                    text-align: center;
+                    text-align: left;
+                    width: auto;
+                    margin-left: 16px;
+                    margin-right: 16px;
                 }
             }
             button {
@@ -575,6 +583,9 @@ button {
                 margin-right: 16px;
                 line-height: 24px;
                 text-align: center;
+                @media all and (max-width: $breakpointTablet) {
+                    margin-right: 10px;
+                }
             }
             .right-content-download {
                 @media all and (max-width: $breakpointDesktop) {
@@ -596,7 +607,7 @@ button {
                 margin-bottom: 5px;
                 @media all and (max-width: $breakpointTablet) {
                     width: auto;
-                    margin-bottom: 14px;
+                    margin: 0 16px 14px;
                     height: auto;
                 }
             }
@@ -610,10 +621,10 @@ button {
                 color: #fff4e0;
                 margin-top: 19px;
                 @media all and (max-width: $breakpointTablet) {
-                    margin-bottom: 10px;
-                    margin-top: 0;
+                    margin: 0 16px 10px;
                     height: auto;
                     line-height: 2;
+                    font-size: 14px;
                 }
             }
             .package-download {
@@ -621,6 +632,7 @@ button {
                 margin-left: 45px;
                 @media all and (max-width: $breakpointTablet) {
                     margin-bottom: 32px;
+                    margin-left: 55px;
                 }
                 .package-download-content,
                 a {
@@ -659,6 +671,9 @@ button {
             padding: 0 24px;
             width: 100%;
         }
+        @media all and (max-width: $breakpointTablet) {
+            padding: 0 16px;
+        }
     }
     .left {
         margin-top: 164px;
@@ -680,6 +695,10 @@ button {
                 margin-bottom: 24px;
                 margin-left: 24px;
                 margin-right: 24px;
+            }
+            @media all and (max-width: $breakpointTablet) {
+                margin: 0 0 15px 0;
+                font-size: 30px;
             }
         }
         .mobile-content {
@@ -705,6 +724,7 @@ button {
             }
             @media all and (max-width: $breakpointTablet) {
                 width: 100%;
+                margin-bottom: 19px;
             }
         }
         .mobile-right {
@@ -717,7 +737,6 @@ button {
             }
             @media all and (max-width: $breakpointTablet) {
                 width: 100%;
-                align-items: center;
                 padding: 0;
             }
         }
@@ -741,6 +760,18 @@ button {
             color: $texts-color;
             font-weight: 500;
             margin-top: 12px;
+        }
+    }
+    .contact-line {
+        display: none;
+        @media all and (max-width: $breakpointDesktop) {
+            display: block;
+            width: calc(100% - 32px);
+            margin: 0 auto;
+            height: 2px;
+            background-color: rgba(0, 0, 0, 0.1);
+            margin-top: 24px;
+            margin-bottom: 22px;
         }
     }
     .right {
@@ -788,6 +819,11 @@ button {
                 padding-top: 36px;
                 padding-left: 32px;
                 margin-bottom: 12px;
+                @media all and (max-width: $breakpointTablet) {
+                    padding-top: 16px;
+                    padding-left: 16px;
+                    margin-bottom: 14px;
+                }
             }
             .contact-form-description {
                 position: relative;
@@ -806,6 +842,9 @@ button {
                     width: 80%;
                     margin-bottom: 28px;
                 }
+                @media all and (max-width: $breakpointTablet) {
+                    padding-left: 16px;
+                }
             }
             form {
                 position: relative;
@@ -822,7 +861,7 @@ button {
                         margin-bottom: 24px;
                     }
                     @media all and (max-width: $breakpointTablet) {
-                        width: calc(100% - 64px) !important;
+                        width: calc(100% - 32px) !important;
                     }
                 }
                 input[type="email"] {
@@ -845,7 +884,8 @@ button {
                         margin-right: 16px;
                     }
                     @media all and (max-width: $breakpointTablet) {
-                        margin-right: 32px;
+                        margin-right: 16px;
+                        margin-left: 16px;
                         font-size: 12px;
                     }
                 }
@@ -869,7 +909,8 @@ button {
                         margin-left: 16px;
                     }
                     @media all and (max-width: $breakpointTablet) {
-                        margin-left: 32px;
+                        margin-right: 16px;
+                        margin-left: 16px;
                         font-size: 12px;
                     }
                 }
@@ -894,7 +935,10 @@ button {
                         width: calc(100% - 64px);
                     }
                     @media all and (max-width: $breakpointTablet) {
+                        width: calc(100% - 32px);
                         font-size: 12px;
+                        margin-right: 16px;
+                        margin-left: 16px;
                     }
                 }
                 input:focus,
@@ -921,6 +965,9 @@ button {
                         margin-right: 32px;
                         float: right;
                     }
+                    @media all and (max-width: $breakpointTablet) {
+                        margin-right: 16px;
+                    }
                 }
                 button:hover {
                     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
@@ -939,6 +986,9 @@ button {
                     transform: skew(-77deg);
                     top: -258px;
                     width: 1200px;
+                }
+                @media all and (max-width: $breakpointTablet) {
+                    top: -400px
                 }
             }
         }

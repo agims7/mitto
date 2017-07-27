@@ -129,7 +129,8 @@ button {
   color: white; }
   @media all and (max-width: 768px) {
     .home {
-      min-height: auto; } }
+      height: 514px !important;
+      min-height: 514px !important; } }
   .home .youtube-container {
     display: none;
     width: 100%;
@@ -163,9 +164,9 @@ button {
         font-size: 36px; } }
     @media all and (max-width: 768px) {
       .home .title {
-        left: 20px;
-        top: 101px;
-        width: 296px; } }
+        top: 179px;
+        width: 296px;
+        left: 16px; } }
   .home .title-second {
     width: 558px;
     height: auto;
@@ -184,9 +185,9 @@ button {
         left: 61px; } }
     @media all and (max-width: 768px) {
       .home .title-second {
-        top: 235px;
+        top: 323px;
         width: 288px;
-        left: 20px; } }
+        left: 16px; } }
   .home .downloadMitto {
     width: 156px;
     height: 40px;
@@ -308,6 +309,9 @@ button {
     text-align: center;
     color: #333333;
     margin: 70px auto 12px; }
+    @media all and (max-width: 768px) {
+      .prices .title {
+        margin-top: 64px; } }
   .prices .prices-description-1 {
     width: auto;
     font-family: "Montserrat";
@@ -402,19 +406,20 @@ button {
     flex-wrap: wrap; }
     @media all and (max-width: 768px) {
       .download .content {
-        flex-direction: column; } }
+        flex-direction: column;
+        width: 100%; } }
     .download .content .left-download {
       width: calc(50% - 1px); }
       @media all and (max-width: 768px) {
         .download .content .left-download {
-          width: 100vw; }
+          width: 100%; }
           .download .content .left-download .center-block {
             align-items: center; } }
     .download .content .right-download {
       width: calc(50% - 1px); }
       @media all and (max-width: 768px) {
         .download .content .right-download {
-          width: 100vw; } }
+          width: 100%; } }
     .download .content .vr {
       width: 2px;
       height: 263px;
@@ -422,9 +427,9 @@ button {
       margin: 48px 0; }
       @media all and (max-width: 768px) {
         .download .content .vr {
-          width: 90%;
+          width: calc(100% - 32px);
           height: 2px;
-          margin: 32px 25px; } }
+          margin: 32px auto; } }
     @media all and (max-width: 768px) {
       .download .content .left .mobile-new-line {
         display: none; } }
@@ -453,7 +458,10 @@ button {
           width: 348px; } }
       @media all and (max-width: 768px) {
         .download .content .left .label-description {
-          text-align: center; } }
+          text-align: left;
+          width: auto;
+          margin-left: 16px;
+          margin-right: 16px; } }
     .download .content .left button span {
       width: 114px;
       height: 19px;
@@ -491,6 +499,9 @@ button {
       margin-right: 16px;
       line-height: 24px;
       text-align: center; }
+      @media all and (max-width: 768px) {
+        .download .content .right .circle {
+          margin-right: 10px; } }
     @media all and (max-width: 1200px) {
       .download .content .right .right-content-download {
         padding-left: 25px; } }
@@ -510,7 +521,7 @@ button {
       @media all and (max-width: 768px) {
         .download .content .right .label-package {
           width: auto;
-          margin-bottom: 14px;
+          margin: 0 16px 14px;
           height: auto; } }
     .download .content .right .package-content {
       height: 22px;
@@ -523,16 +534,17 @@ button {
       margin-top: 19px; }
       @media all and (max-width: 768px) {
         .download .content .right .package-content {
-          margin-bottom: 10px;
-          margin-top: 0;
+          margin: 0 16px 10px;
           height: auto;
-          line-height: 2; } }
+          line-height: 2;
+          font-size: 14px; } }
     .download .content .right .package-download {
       margin-top: 3px;
       margin-left: 45px; }
       @media all and (max-width: 768px) {
         .download .content .right .package-download {
-          margin-bottom: 32px; } }
+          margin-bottom: 32px;
+          margin-left: 55px; } }
       .download .content .right .package-download .package-download-content,
       .download .content .right .package-download a {
         width: 141px;
@@ -564,6 +576,9 @@ button {
     .contact .horizontal-block {
       padding: 0 24px;
       width: 100%; } }
+  @media all and (max-width: 768px) {
+    .contact .horizontal-block {
+      padding: 0 16px; } }
   .contact .left {
     margin-top: 164px; }
     @media all and (max-width: 1200px) {
@@ -585,6 +600,10 @@ button {
           margin-bottom: 24px;
           margin-left: 24px;
           margin-right: 24px; } }
+      @media all and (max-width: 768px) {
+        .contact .left .contact-label {
+          margin: 0 0 15px 0;
+          font-size: 30px; } }
     @media all and (max-width: 1200px) {
       .contact .left .mobile-content {
         display: flex; } }
@@ -606,7 +625,8 @@ button {
           width: 50%; } }
       @media all and (max-width: 768px) {
         .contact .left .contact-description {
-          width: 100%; } }
+          width: 100%;
+          margin-bottom: 19px; } }
     @media all and (max-width: 1200px) {
       .contact .left .mobile-right {
         width: 50%;
@@ -617,7 +637,6 @@ button {
     @media all and (max-width: 768px) {
       .contact .left .mobile-right {
         width: 100%;
-        align-items: center;
         padding: 0; } }
     .contact .left .contact-details-email {
       width: 177px;
@@ -638,6 +657,17 @@ button {
       color: #333333;
       font-weight: 500;
       margin-top: 12px; }
+  .contact .contact-line {
+    display: none; }
+    @media all and (max-width: 1200px) {
+      .contact .contact-line {
+        display: block;
+        width: calc(100% - 32px);
+        margin: 0 auto;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-top: 24px;
+        margin-bottom: 22px; } }
   .contact .right {
     margin-top: 164px; }
     @media all and (max-width: 1200px) {
@@ -682,6 +712,11 @@ button {
         padding-top: 36px;
         padding-left: 32px;
         margin-bottom: 12px; }
+        @media all and (max-width: 768px) {
+          .contact .right .contact-form .contact-form-label {
+            padding-top: 16px;
+            padding-left: 16px;
+            margin-bottom: 14px; } }
       .contact .right .contact-form .contact-form-description {
         position: relative;
         width: 329px;
@@ -699,6 +734,9 @@ button {
           .contact .right .contact-form .contact-form-description {
             width: 80%;
             margin-bottom: 28px; } }
+        @media all and (max-width: 768px) {
+          .contact .right .contact-form .contact-form-description {
+            padding-left: 16px; } }
       .contact .right .contact-form form {
         position: relative; }
         .contact .right .contact-form form input {
@@ -715,7 +753,7 @@ button {
               margin-bottom: 24px; } }
           @media all and (max-width: 768px) {
             .contact .right .contact-form form input {
-              width: calc(100% - 64px) !important; } }
+              width: calc(100% - 32px) !important; } }
         .contact .right .contact-form form input[type="email"] {
           width: 412px;
           height: 40px;
@@ -737,7 +775,8 @@ button {
               margin-right: 16px; } }
           @media all and (max-width: 768px) {
             .contact .right .contact-form form input[type="email"] {
-              margin-right: 32px;
+              margin-right: 16px;
+              margin-left: 16px;
               font-size: 12px; } }
         .contact .right .contact-form form input[type="tel"] {
           width: 412px;
@@ -760,7 +799,8 @@ button {
               margin-left: 16px; } }
           @media all and (max-width: 768px) {
             .contact .right .contact-form form input[type="tel"] {
-              margin-left: 32px;
+              margin-right: 16px;
+              margin-left: 16px;
               font-size: 12px; } }
         .contact .right .contact-form form textarea {
           width: 412px;
@@ -784,7 +824,10 @@ button {
               width: calc(100% - 64px); } }
           @media all and (max-width: 768px) {
             .contact .right .contact-form form textarea {
-              font-size: 12px; } }
+              width: calc(100% - 32px);
+              font-size: 12px;
+              margin-right: 16px;
+              margin-left: 16px; } }
         .contact .right .contact-form form input:focus,
         .contact .right .contact-form form textarea:focus {
           border: solid 1px #41a38e; }
@@ -808,6 +851,9 @@ button {
               margin-top: 24px;
               margin-right: 32px;
               float: right; } }
+          @media all and (max-width: 768px) {
+            .contact .right .contact-form form button {
+              margin-right: 16px; } }
         .contact .right .contact-form form button:hover {
           box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25); }
       .contact .right .contact-form .additional-background-2 {
@@ -824,5 +870,8 @@ button {
             transform: skew(-77deg);
             top: -258px;
             width: 1200px; } }
+        @media all and (max-width: 768px) {
+          .contact .right .contact-form .additional-background-2 {
+            top: -400px; } }
 
 /*# sourceMappingURL=style.css.map */
