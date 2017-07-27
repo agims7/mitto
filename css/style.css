@@ -412,14 +412,20 @@ button {
       width: calc(50% - 1px); }
       @media all and (max-width: 768px) {
         .download .content .left-download {
-          width: 100%; }
-          .download .content .left-download .center-block {
-            align-items: center; } }
+          width: 100%; } }
+      @media all and (max-width: 1200px) {
+        .download .content .left-download .center-block {
+          width: 100%;
+          padding-left: 24px; } }
     .download .content .right-download {
       width: calc(50% - 1px); }
       @media all and (max-width: 768px) {
         .download .content .right-download {
           width: 100%; } }
+      @media all and (max-width: 1200px) {
+        .download .content .right-download .center-block {
+          width: 100%;
+          padding-left: 24px; } }
     .download .content .vr {
       width: 2px;
       height: 263px;
@@ -430,7 +436,7 @@ button {
           width: calc(100% - 32px);
           height: 2px;
           margin: 32px auto; } }
-    @media all and (max-width: 768px) {
+    @media all and (max-width: 1200px) {
       .download .content .left .mobile-new-line {
         display: none; } }
     .download .content .left .label {
@@ -598,7 +604,6 @@ button {
         .contact .left .contact-label {
           width: 100%;
           margin-bottom: 24px;
-          margin-left: 24px;
           margin-right: 24px; } }
       @media all and (max-width: 768px) {
         .contact .left .contact-label {
@@ -872,6 +877,6 @@ button {
             width: 1200px; } }
         @media all and (max-width: 768px) {
           .contact .right .contact-form .additional-background-2 {
-            top: -400px; } }
+            top: -300px; } }
 
 /*# sourceMappingURL=style.css.map */

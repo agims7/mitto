@@ -478,8 +478,11 @@ button {
             width: calc(50% - 1px);
             @media all and (max-width: $breakpointTablet) {
                 width: 100%;
-                .center-block {
-                    align-items: center;
+            }
+            .center-block {
+                @media all and (max-width: $breakpointDesktop) {
+                    width: 100%;
+                    padding-left: 24px;
                 }
             }
         }
@@ -487,6 +490,12 @@ button {
             width: calc(50% - 1px);
             @media all and (max-width: $breakpointTablet) {
                 width: 100%;
+            }
+            .center-block {
+                @media all and (max-width: $breakpointDesktop) {
+                    width: 100%;
+                    padding-left: 24px;
+                }
             }
         }
         .vr {
@@ -502,7 +511,7 @@ button {
         }
         .left {
             .mobile-new-line {
-                @media all and (max-width: $breakpointTablet) {
+                @media all and (max-width: $breakpointDesktop) {
                     display: none;
                 }
             }
@@ -693,7 +702,6 @@ button {
             @media all and (max-width: $breakpointDesktop) {
                 width: 100%;
                 margin-bottom: 24px;
-                margin-left: 24px;
                 margin-right: 24px;
             }
             @media all and (max-width: $breakpointTablet) {
@@ -988,7 +996,7 @@ button {
                     width: 1200px;
                 }
                 @media all and (max-width: $breakpointTablet) {
-                    top: -400px
+                    top: -300px
                 }
             }
         }
