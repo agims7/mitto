@@ -43,6 +43,9 @@ button {
     text-align: center;
     color: #de5628;
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.12), 0 2px 14px 0 rgba(0, 0, 0, 0.24);
+    @media all and (max-width: $breakpointTablet) {
+        margin: 0 auto;
+    }
     span {
         font-weight: 300;
     }
@@ -348,7 +351,7 @@ button {
     position: relative;
     margin-bottom: 118px;
     @media all and (max-width: $breakpointTablet) {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     .title {
         width: 100%;
@@ -359,6 +362,7 @@ button {
         margin: 70px auto 12px;
         @media all and (max-width: $breakpointTablet) {
             margin-top: 64px;
+            margin-bottom: 9px;
         }
     }
     .prices-description-1 {
@@ -369,9 +373,9 @@ button {
         line-height: 1.63;
         text-align: center;
         color: $texts-color;
-        margin: 0 auto 12px auto;
+        margin: 0 auto 20px auto;
         @media all and (max-width: $breakpointTablet) {
-            padding: 0 12px;
+            padding: 0 16px;
         }
     }
     .full-price-list {
@@ -380,7 +384,7 @@ button {
         font-size: 16px;
         text-align: center;
         color: $brownish-orange;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         cursor: pointer;
     }
     .options {
@@ -391,7 +395,7 @@ button {
             width: 184px;
             height: 166px;
             border-radius: 5px;
-            margin: 0 12px 36px 12px;
+            margin: 10px 12px 26px 12px;
             position: relative;
         }
         .brown {
@@ -484,6 +488,9 @@ button {
                     width: 100%;
                     padding-left: 24px;
                 }
+                @media all and (max-width: $breakpointTablet) {
+                    padding-left: 0;
+                }
             }
         }
         .right-download {
@@ -524,6 +531,7 @@ button {
                 color: #fff4e0;
                 @media all and (max-width: $breakpointTablet) {
                     margin-top: 24px;
+                    margin-left: 16px;
                 }
             }
             .label-description {
@@ -542,8 +550,9 @@ button {
                 @media all and (max-width: $breakpointTablet) {
                     text-align: left;
                     width: auto;
-                    margin-left: 16px;
                     margin-right: 16px;
+                    margin-bottom: 26px;
+                    margin-left: 16px;
                 }
             }
             button {
@@ -566,6 +575,9 @@ button {
             }
             .system {
                 margin-top: 21px;
+                @media all and (max-width: $breakpointTablet) {
+                    margin: 21px auto 0;
+                }
                 .label-system {
                     width: 83px;
                     height: 22px;
