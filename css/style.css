@@ -458,7 +458,7 @@ button {
           margin-top: 24px;
           margin-left: 16px; } }
     .download .content .left .label-description {
-      width: auto;
+      width: 95%;
       height: auto;
       font-family: "Montserrat";
       font-size: 16px;
