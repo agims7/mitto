@@ -7,17 +7,24 @@ $(document).ready(function() {
         }
     });
 
-    //Smooth scrolling
-    $(".pointer").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - 84
-            }, 800, function() {
-                window.location.hash = hash;
-            });
-        }
+    // //Smooth scrolling
+    // $(".pointer").on('click', function(event) {
+    //     if (this.hash !== "") {
+    //         event.preventDefault();
+    //         var hash = this.hash;
+    //         $('html, body').animate({
+    //             scrollTop: $(hash).offset().top - 84
+    //         }, 800, function() {
+    //             window.location.hash = hash;
+    //         });
+    //     }
+    // });
+    $(document).on('click', 'a', function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - 84
+        }, 800);
     });
 
     //Video section
