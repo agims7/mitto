@@ -38,7 +38,7 @@
 
         /////////////// TABS ///////////////
 
-        var intervalFunctions = [first, second, third, fourth];
+        var intervalFunctions = [second, third, fourth, first];
         var intervalIndex = 0;
         window.setInterval(function() {
             intervalFunctions[intervalIndex++ % intervalFunctions.length]();
