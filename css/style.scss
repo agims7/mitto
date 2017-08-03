@@ -300,15 +300,20 @@ button {
         height: 29px;
         font-size: 24px;
         text-align: left;
+        cursor: pointer;
     }
     .paragraph-first-second {
         margin-top: 14px;
         width: 280px;
         height: 78px;
+        opacity: 1;
         font-size: 16px;
         font-weight: 300;
         line-height: 1.63;
         text-align: left;
+        -webkit-transition: all .8s;
+        /* Safari */
+        transition: all .8s;
     }
     .paragraph-second {
         margin-top: 31px;
@@ -316,6 +321,21 @@ button {
         height: 29px;
         font-size: 24px;
         text-align: left;
+        cursor: pointer;
+    }
+    .paragraph-second-second {
+        // display: none;
+        margin-top: 14px;
+        width: 280px;
+        height: 0;
+        opacity: 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.63;
+        text-align: left;
+        -webkit-transition: all .8s;
+        /* Safari */
+        transition: all .8s;
     }
     .paragraph-third {
         margin-top: 31px;
@@ -323,6 +343,21 @@ button {
         height: 29px;
         font-size: 24px;
         text-align: left;
+        cursor: pointer;
+    }
+    .paragraph-third-second {
+        // display: none;
+        margin-top: 14px;
+        width: 280px;
+        height: 0;
+        opacity: 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.63;
+        text-align: left;
+        -webkit-transition: all .8s;
+        /* Safari */
+        transition: all .8s;
     }
     .paragraph-fourth {
         margin-top: 31px;
@@ -330,6 +365,21 @@ button {
         height: 29px;
         font-size: 24px;
         text-align: left;
+        cursor: pointer;
+    }
+    .paragraph-fourth-second {
+        // display: none;
+        margin-top: 14px;
+        width: 280px;
+        height: 0;
+        opacity: 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.63;
+        text-align: left;
+        -webkit-transition: all .8s;
+        /* Safari */
+        transition: all .8s;
     }
     .image-description {
         top: 125px;

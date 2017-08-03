@@ -260,33 +260,77 @@ button {
     width: 280px;
     height: 29px;
     font-size: 24px;
-    text-align: left; }
+    text-align: left;
+    cursor: pointer; }
   .description .paragraph-first-second {
     margin-top: 14px;
     width: 280px;
     height: 78px;
+    opacity: 1;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
-    text-align: left; }
+    text-align: left;
+    -webkit-transition: all .8s;
+    /* Safari */
+    transition: all .8s; }
   .description .paragraph-second {
     margin-top: 31px;
     width: 280px;
     height: 29px;
     font-size: 24px;
-    text-align: left; }
+    text-align: left;
+    cursor: pointer; }
+  .description .paragraph-second-second {
+    margin-top: 14px;
+    width: 280px;
+    height: 0;
+    opacity: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: left;
+    -webkit-transition: all .8s;
+    /* Safari */
+    transition: all .8s; }
   .description .paragraph-third {
     margin-top: 31px;
     width: 280px;
     height: 29px;
     font-size: 24px;
-    text-align: left; }
+    text-align: left;
+    cursor: pointer; }
+  .description .paragraph-third-second {
+    margin-top: 14px;
+    width: 280px;
+    height: 0;
+    opacity: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: left;
+    -webkit-transition: all .8s;
+    /* Safari */
+    transition: all .8s; }
   .description .paragraph-fourth {
     margin-top: 31px;
     width: 280px;
     height: 29px;
     font-size: 24px;
-    text-align: left; }
+    text-align: left;
+    cursor: pointer; }
+  .description .paragraph-fourth-second {
+    margin-top: 14px;
+    width: 280px;
+    height: 0;
+    opacity: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: left;
+    -webkit-transition: all .8s;
+    /* Safari */
+    transition: all .8s; }
   .description .image-description {
     top: 125px;
     width: 541px;
