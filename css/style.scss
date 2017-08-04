@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700&subset=latin-ext');
-//colors:
 $brownish-orange: #de5628;
 $texts-color: #333333;
 $breakpointDesktop: 1200px;
@@ -23,7 +22,6 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    min-width: 1200px;
     position: relative;
 }
 
@@ -63,6 +61,7 @@ button {
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .right {
@@ -71,6 +70,7 @@ button {
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .center-block {
@@ -179,6 +179,11 @@ button {
             transform: translate(-50%, -50%);
             box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.75);
             z-index: 10;
+        }
+        iframe {
+            &:-webkit-full-screen {
+                transform: none !important;
+            }
         }
     }
     .title {
@@ -879,8 +884,8 @@ button {
                 position: absolute;
                 right: 0;
                 top: 33px;
-                @media all and (max-width: $breakpointTablet) {
-                    top: 65px;
+                @media all and (max-width: $breakpointDesktop) {
+                    top: -18px;
                 }
             }
             .contact-form-label {
@@ -1050,37 +1055,37 @@ button {
                 }
             }
             .additional-background-2 {
-                width: 1000px;
-                height: 265px;
-                transform: skew(-75deg);
-                background-image: linear-gradient(to bottom, #e3f6f2, #eff9f7);
-                z-index: 2;
                 position: relative;
-                top: -234px;
+                width: 100%;
+                height: 263px;
+                bottom: 134px;
+                background: linear-gradient(to bottom, #e3f6f2, #eff9f7);
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background: inherit;
+                    z-index: -1;
+                    bottom: 0;
+                    transform-origin: left top;
+                    transform: skewY(-13deg);
+                    @media all and (max-width: $breakpointDesktop) {
+                        transform: skewY(-7deg);
+                    }
+                    @media all and (max-width: $breakpointTablet) {
+                        transform: skewY(-13deg);
+                    }
+                }
                 @media all and (max-width: $breakpointDesktop) {
-                    height: 601px;
-                    transform: skew(-77deg);
-                    top: -258px;
-                    width: 1200px;
+                    height: 263px;
+                    bottom: 41px
                 }
                 @media all and (max-width: $breakpointTablet) {
-                    top: -300px
+                    height: 200px;
+                    bottom: 0px
                 }
             }
         }
     }
 }
-
-// .additional-background-1 {
-//     height: 719px;
-//     width: 300%;
-//     background-image: linear-gradient(to bottom, #ffffff, #eff9f7);
-//     z-index: 1;
-//     position: relative;
-//     transform: skew(-84deg);
-//     margin-top: -416px;
-//     overflow: hidden;
-//     @media all and (max-width: $breakpointDesktop) {
-//                   display: none;
-//                 }
-// }

@@ -1,77 +1,79 @@
-            /////////////// Navbar fixed / background ///////////////
-            $(window).scroll(function() {
-                if ($(document).scrollTop() > (window.innerHeight - 84)) {
-                    $(".navbar").css("background-color", "#39c0a8");
-                } else {
-                    $(".navbar").css("background-color", "transparent");
-                }
-            });
+$(document).ready(function() {
 
-            /////////////// Smooth scrolling ///////////////
-            $(document).on('click', 'a', function() {
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - 84
-                }, 800);
-            });
+    /////////////// Navbar fixed / background ///////////////
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > (window.innerHeight - 84)) {
+            $(".navbar").css("background-color", "#39c0a8");
+        } else {
+            $(".navbar").css("background-color", "transparent");
+        }
+    });
 
-            /////////////// Video section ///////////////
-            $(".video-link").on('click', function(event) {
-                $(".youtube-container").css("display", "block");
-                playVideo();
-            });
+    /////////////// Smooth scrolling ///////////////
+    $(document).on('click', 'a', function() {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - 84
+        }, 800);
+    });
 
-            $(".youtube-container").on('click', function(event) {
-                stopVideo();
-                $(".youtube-container").css("display", "none");
-            });
+    /////////////// Video section ///////////////
 
-            $(document).keyup(function(e) {
-                if (e.keyCode == 27) {
-                    stopVideo();
-                    $(".youtube-container").css("display", "none");
-                }
-            });
+    $(".video-link").on('click', function(event) {
+        $(".youtube-container").css("display", "block");
+        playVideo();
+    });
 
-            $(document).ready(function() {
-                /////////////// TABS ///////////////
+    $(".youtube-container").on('click', function(event) {
+        stopVideo();
+        $(".youtube-container").css("display", "none");
+    });
 
-                var intervalFunctions = [second, third, fourth, first];
-                var intervalIndex = 0;
-                window.setInterval(function() {
-                    intervalFunctions[intervalIndex++ % intervalFunctions.length]();
-                }, 5000);
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            stopVideo();
+            $(".youtube-container").css("display", "none");
+        }
+    });
 
-                $(".paragraph-first").click(first);
-                $(".paragraph-second").click(second);
-                $(".paragraph-third").click(third);
-                $(".paragraph-fourth").click(fourth);
+    /////////////// TABS ///////////////
 
-                function first() {
-                    $(".paragraph-first-second").css({ "opacity": "1", "height": "78px" });
-                    $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
-                }
+    var intervalFunctions = [second, third, fourth, first];
+    var intervalIndex = 0;
+    window.setInterval(function() {
+        intervalFunctions[intervalIndex++ % intervalFunctions.length]();
+    }, 5000);
 
-                function second() {
-                    $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-second-second").css({ "opacity": "1", "height": "78px" });
-                    $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
-                }
+    $(".paragraph-first").click(first);
+    $(".paragraph-second").click(second);
+    $(".paragraph-third").click(third);
+    $(".paragraph-fourth").click(fourth);
 
-                function third() {
-                    $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-third-second").css({ "opacity": "1", "height": "120px" });
-                    $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
-                }
+    function first() {
+        $(".paragraph-first-second").css({ "opacity": "1", "height": "78px" });
+        $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+    }
 
-                function fourth() {
-                    $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
-                    $(".paragraph-fourth-second").css({ "opacity": "1", "height": "78px" });
-                }
+    function second() {
+        $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-second-second").css({ "opacity": "1", "height": "78px" });
+        $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+    }
 
-            });
+    function third() {
+        $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-third-second").css({ "opacity": "1", "height": "120px" });
+        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+    }
+
+    function fourth() {
+        $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-fourth-second").css({ "opacity": "1", "height": "78px" });
+    }
+
+});
