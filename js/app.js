@@ -1,4 +1,5 @@
     $(document).ready(function() {
+        console.log("smieszne")
 
         /////////////// Navbar fixed / background ///////////////
         $(window).scroll(function() {

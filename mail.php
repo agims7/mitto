@@ -3,7 +3,7 @@
     $message = $_POST['message'];
     $tel = $_POST['tel'];
     $formcontent="Adres email: $email \n\nTelefon: $tel \n\nTresc wiadomosci: $message";
-    $recipient = "michal.dydo@mittoplus.pl";
+    $recipient = "kontakt@mittoplus.pl";
     $subject = "Formularz kontaktowy ze strony Mitto+";
     $mailheader = "Od: $email \r\n";
     mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
