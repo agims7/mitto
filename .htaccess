@@ -42,6 +42,8 @@ ExpiresByType images/background.svg "access 1 year"
 
 ExpiresByType images/bitmap@3x.png "access 1 year"
 
+ExpiresByType images/zlecenia.png "access 1 year"
+
 ExpiresByType css/normalize.css "access 1 year"
 
 ExpiresByType css/font-awesome.min.css "access 1 year"
