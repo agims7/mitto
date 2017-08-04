@@ -53,6 +53,14 @@ $(document).ready(function() {
         $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
         $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
         $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+        $(".wysylka").css({ "display": "block" });
+        $(".koszyk").css({ "display": "none" });
+        $(".historia").css({ "display": "none" });
+        $(".oszczednosci").css({ "display": "none" });
+        $(".paragraph-first").addClass("active-paragraph");
+        $(".paragraph-second").removeClass("active-paragraph");
+        $(".paragraph-third").removeClass("active-paragraph");
+        $(".paragraph-fourth").removeClass("active-paragraph");
     }
 
     function second() {
@@ -60,6 +68,14 @@ $(document).ready(function() {
         $(".paragraph-second-second").css({ "opacity": "1", "height": "78px" });
         $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
         $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+        $(".wysylka").css({ "display": "none" });
+        $(".koszyk").css({ "display": "block" });
+        $(".historia").css({ "display": "none" });
+        $(".oszczednosci").css({ "display": "none" });
+        $(".paragraph-first").removeClass("active-paragraph");
+        $(".paragraph-second").addClass("active-paragraph");
+        $(".paragraph-third").removeClass("active-paragraph");
+        $(".paragraph-fourth").removeClass("active-paragraph");
     }
 
     function third() {
@@ -67,6 +83,14 @@ $(document).ready(function() {
         $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
         $(".paragraph-third-second").css({ "opacity": "1", "height": "120px" });
         $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+        $(".wysylka").css({ "display": "none" });
+        $(".koszyk").css({ "display": "none" });
+        $(".historia").css({ "display": "block" });
+        $(".oszczednosci").css({ "display": "none" });
+        $(".paragraph-first").removeClass("active-paragraph");
+        $(".paragraph-second").removeClass("active-paragraph");
+        $(".paragraph-third").addClass("active-paragraph");
+        $(".paragraph-fourth").removeClass("active-paragraph");
     }
 
     function fourth() {
@@ -74,6 +98,14 @@ $(document).ready(function() {
         $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
         $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
         $(".paragraph-fourth-second").css({ "opacity": "1", "height": "78px" });
+        $(".wysylka").css({ "display": "none" });
+        $(".koszyk").css({ "display": "none" });
+        $(".historia").css({ "display": "none" });
+        $(".oszczednosci").css({ "display": "block" });
+        $(".paragraph-first").removeClass("active-paragraph");
+        $(".paragraph-second").removeClass("active-paragraph");
+        $(".paragraph-third").removeClass("active-paragraph");
+        $(".paragraph-fourth").addClass("active-paragraph");
     }
 
 });

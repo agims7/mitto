@@ -55,6 +55,20 @@ module.exports = function(grunt) {
                     dest: 'compresed/'
                 }]
             }
+        },
+
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    minifyCSS: true,
+                    minifyJS: true
+                },
+                files: {
+                    'dist/index.html': 'index.html', // 'destination': 'source'
+                }
+            }
         }
 
     });
@@ -64,6 +78,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
     // Default task(s)
     grunt.registerTask('default', ['watch']);
