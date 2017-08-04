@@ -29,6 +29,7 @@ button {
   background-color: #ffffff;
   font-family: "Montserrat";
   font-size: 16px;
+  cursor: pointer;
   line-height: 52px;
   text-align: center;
   color: #de5628;
@@ -379,7 +380,9 @@ button {
     text-align: center;
     color: #de5628;
     margin-bottom: 60px;
-    cursor: pointer; }
+    cursor: pointer;
+    display: block;
+    text-decoration: none; }
   .prices .options {
     display: flex;
     justify-content: center;
@@ -521,20 +524,22 @@ button {
           margin-right: 16px;
           margin-bottom: 26px;
           margin-left: 16px; } }
-    .download .content .left button span {
-      width: 114px;
-      height: 19px;
-      font-family: "Montserrat";
-      font-size: 16px;
-      text-align: left;
-      color: #de5628;
-      line-height: 52px; }
-    .download .content .left button .icon-download {
-      object-fit: contain;
-      color: #de5628;
-      margin-left: 2px;
-      position: relative;
-      top: 5px; }
+    .download .content .left a {
+      text-decoration: none; }
+      .download .content .left a span {
+        width: 114px;
+        height: 19px;
+        font-family: "Montserrat";
+        font-size: 16px;
+        text-align: left;
+        color: #de5628;
+        line-height: 52px; }
+      .download .content .left a .icon-download {
+        object-fit: contain;
+        color: #de5628;
+        margin-left: 2px;
+        position: relative;
+        top: 5px; }
     .download .content .left .system {
       margin-top: 21px; }
       @media all and (max-width: 768px) {
