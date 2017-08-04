@@ -193,8 +193,10 @@ button {
         width: 288px;
         left: 16px; } }
   .home .downloadMitto {
+    text-decoration: none;
     width: 156px;
     height: 40px;
+    line-height: 40px;
     top: 379px;
     left: 152px;
     position: absolute;

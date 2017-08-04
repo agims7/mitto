@@ -1,0 +1,21 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.mittoplus.pl(.*) [NC]
+RewriteRule ^(.*)$ http://mittoplus.pl/$1 [R=301,L]
+
+RewriteRule ^index.(php|html|htm)$ / [R=301,L]
+RewriteRule ^([a-z0-9-_]+)/index.(php|html|htm)$ /$1/ [R=301,L]
+
+RewriteRule ^([a-z0-9-_]+)$ http://%{HTTP_HOST}/$1/ [R=301]
+
+## EXPIRES CACHING ##
+
+<IfModule mod_expires.c>
+
+ExpiresActive On
+
+ExpiresByType js/app.js "access 1 year"
+
+</IfModule>
+
+## EXPIRES CACHING ##
