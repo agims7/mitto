@@ -660,8 +660,7 @@ button {
       margin-bottom: 0; } }
   @media all and (max-width: 1200px) {
     .contact .horizontal-block {
-      padding: 0 9px;
-      width: calc(100% - 30px) !important; } }
+      padding: 0 9px; } }
   @media all and (max-width: 768px) {
     .contact .horizontal-block {
       padding: 0 16px; } }
@@ -681,8 +680,9 @@ button {
       @media all and (max-width: 1200px) {
         .contact .left .center-block {
           padding-left: 24px;
-          padding-top: 0; } }
-      @media all and (max-width: 1200px) {
+          padding-top: 0;
+          width: calc(100% - 30px) !important; } }
+      @media all and (max-width: 768px) {
         .contact .left .center-block {
           padding: 0; } }
     .contact .left .contact-label {
@@ -777,6 +777,13 @@ button {
     .contact .right .center-block {
       padding: 0;
       width: 100%; }
+      @media all and (max-width: 1200px) {
+        .contact .right .center-block {
+          width: 100% !important;
+          padding-right: 30px; } }
+      @media all and (max-width: 768px) {
+        .contact .right .center-block {
+          padding-right: 0px; } }
     .contact .right .contact-form {
       width: 476px;
       height: 630px;

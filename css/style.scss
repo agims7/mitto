@@ -793,7 +793,6 @@ button {
     .horizontal-block {
         @media all and (max-width: $breakpointDesktop) {
             padding: 0 9px;
-            width: calc(100% - 30px) !important;
         }
         @media all and (max-width: $breakpointTablet) {
             padding: 0 16px;
@@ -815,8 +814,9 @@ button {
             @media all and (max-width: $breakpointDesktop) {
                 padding-left: 24px;
                 padding-top: 0;
+                width: calc(100% - 30px) !important;
             }
-            @media all and (max-width: $breakpointDesktop) {
+            @media all and (max-width: $breakpointTablet) {
                 padding: 0;
             }
         }
@@ -922,6 +922,13 @@ button {
         .center-block {
             padding: 0;
             width: 100%;
+            @media all and (max-width: $breakpointDesktop) {
+                width: 100% !important;
+                padding-right: 30px;
+            }
+            @media all and (max-width: $breakpointTablet) {
+                padding-right: 0px;
+            }
         }
         .contact-form {
             width: 476px;
