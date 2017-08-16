@@ -415,7 +415,7 @@ button {
         font-size: 32px;
         text-align: center;
         color: $texts-color;
-        margin: 70px auto 12px;
+        margin: 0 auto 12px;
         @media all and (max-width: $breakpointTablet) {
             margin-top: 64px;
             margin-bottom: 9px;
