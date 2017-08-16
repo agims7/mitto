@@ -1,5 +1,39 @@
 $(document).ready(function() {
 
+    if (window.innerWidth <= 768) {
+        $('.options').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 4,
+            variableWidth: true,
+            centerMode: true,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            arrows: false,
+            centerPadding: '20px'
+        });
+    }
+
+    window.onresize = function() {
+        if (window.innerWidth <= 768) {
+            $('.options').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 4,
+                variableWidth: true,
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 2500,
+                arrows: false,
+                centerPadding: '20px'
+            });
+        } else if (window.innerWidth > 768) {
+            $('.options').slick('unslick');
+        }
+    };
+
     /////////////// Navbar fixed / background ///////////////
     $(window).scroll(function() {
         if ($(document).scrollTop() > (window.innerHeight - 84)) {
@@ -107,5 +141,4 @@ $(document).ready(function() {
         $(".paragraph-third").removeClass("active-paragraph");
         $(".paragraph-fourth").addClass("active-paragraph");
     }
-
 });

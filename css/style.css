@@ -379,10 +379,15 @@ button {
     cursor: pointer;
     display: block;
     text-decoration: none; }
+    @media all and (max-width: 768px) {
+      .prices .full-price-list {
+        margin-bottom: 25px; } }
   .prices .options {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    position: relative;
+    transition: all 3s; }
     .prices .options .option-block {
       width: 184px;
       height: 166px;
@@ -656,7 +661,7 @@ button {
   @media all and (max-width: 1200px) {
     .contact .horizontal-block {
       padding: 0 9px;
-      width: calc(100% - 24px); } }
+      width: calc(100% - 30px) !important; } }
   @media all and (max-width: 768px) {
     .contact .horizontal-block {
       padding: 0 16px; } }
@@ -986,5 +991,13 @@ button {
           .contact .right .contact-form .additional-background-2 {
             height: 200px;
             bottom: 0px; } }
+
+.slick-list {
+  padding: 20px !important; }
+
+.slick-dots {
+  bottom: -10px !important; }
+  .slick-dots li button:before {
+    font-size: 35px !important; }
 
 /*# sourceMappingURL=style.css.map */
