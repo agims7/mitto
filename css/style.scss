@@ -690,6 +690,8 @@ button {
                     text-align: left;
                     color: #8e3a19;
                     margin-right: 11px;
+                    position: relative;
+                    bottom: 6px;
                 }
                 .logo-windows {
                     display: inline;
@@ -1067,6 +1069,7 @@ button {
                     }
                 }
                 textarea {
+                    resize: none !important;
                     width: 412px;
                     height: 194px;
                     border: none;

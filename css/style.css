@@ -572,7 +572,9 @@ button {
         line-height: 1.57;
         text-align: left;
         color: #8e3a19;
-        margin-right: 11px; }
+        margin-right: 11px;
+        position: relative;
+        bottom: 6px; }
       .download .content .left .system .logo-windows {
         display: inline; }
     .download .content .right .circle {
@@ -915,6 +917,7 @@ button {
               margin-left: 16px;
               font-size: 12px; } }
         .contact .right .contact-form form textarea {
+          resize: none !important;
           width: 412px;
           height: 194px;
           border: none;

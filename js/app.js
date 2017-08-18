@@ -73,9 +73,9 @@ $(document).ready(function() {
 
     var intervalFunctions = [second, third, fourth, first];
     var intervalIndex = 0;
-    // window.setInterval(function() {
-    //     intervalFunctions[intervalIndex++ % intervalFunctions.length]();
-    // }, 5000);
+    window.setInterval(function() {
+        intervalFunctions[intervalIndex++ % intervalFunctions.length]();
+    }, 5000);
 
     $(".paragraph-first").click(first);
     $(".paragraph-second").click(second);
