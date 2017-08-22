@@ -14,8 +14,6 @@ RewriteRule ^([a-z0-9-_]+)$ http://%{HTTP_HOST}/$1/ [R=301]
 
 ExpiresActive On
 
-ExpiresByType js/app.js "access 1 year"
-
 ExpiresByType images/zloty.svg "access 1 year"
 
 ExpiresByType images/platynowy.svg "access 1 year"
@@ -49,8 +47,6 @@ ExpiresByType css/normalize.css "access 1 year"
 ExpiresByType css/font-awesome.min.css "access 1 year"
 
 ExpiresByType css/normalize.css "access 1 year"
-
-ExpiresByType mail.php "access 1 year"
 
 </IfModule>
 
