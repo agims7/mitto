@@ -79,14 +79,52 @@ button {
     align-items: left;
 }
 
+///////// COOKIES /////////
+
+.cookies {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 56px;
+    background-color: #419588;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 56px;
+    padding: 0 12px;
+    .cookies-content {
+        font-family: 'Montserrat', sans-serif;
+
+        color: #b6d9d4;
+        .cookie {
+            text-decoration: underline;
+        }
+        .cookies-button {
+            border: none;
+            width: 102px;
+            height: 32px;
+            border-radius: 2px;
+            font-weight: 300;
+            background-color: #3e6861;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: #ffffff;
+            margin-left: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
 ///////// NAVBAR /////////
 .navbar {
+    top: 56px;
     position: fixed;
     width: 100%;
     background-color: transparent;
     height: 84px;
     z-index: 3;
-    transition: background-color .5s;
+    transition: all .5s;
     display: flex;
     justify-content: space-between;
     align-items: center;

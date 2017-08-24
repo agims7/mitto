@@ -50,6 +50,12 @@ $(document).ready(function() {
         }, 800);
     });
 
+    /////////////// Close cookie ///////////////
+    $(".cookies-button").on('click', function() {
+        $(".cookies").css("display", "none");
+        $(".navbar").css("top", "0");
+    });
+
     /////////////// Video section ///////////////
 
     $(".video-link").on('click', function(event) {
