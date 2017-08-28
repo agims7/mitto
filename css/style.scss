@@ -4,6 +4,7 @@ $brownish-orange: #de5628;
 $texts-color: #333333;
 $breakpointDesktop: 1200px;
 $breakpointTablet: 768px;
+$breakpointMobileBig: 400px;
 $breakpointMobile: 320px;
 * {
     box-sizing: border-box;
@@ -90,11 +91,21 @@ button {
     text-align: center;
     font-weight: 300;
     font-size: 14px;
-    line-height: 56px;
     padding: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (max-width: $breakpointTablet) {
+        font-size: 13px;
+    }
+    @media all and (max-width: $breakpointMobileBig) {
+        font-size: 11px;
+    }
+    @media all and (max-width: $breakpointMobile) {
+        font-size: 10px;
+    }
     .cookies-content {
         font-family: 'Montserrat', sans-serif;
-
         color: #b6d9d4;
         .cookie {
             text-decoration: underline;
@@ -112,6 +123,16 @@ button {
             color: #ffffff;
             margin-left: 12px;
             cursor: pointer;
+            @media all and (max-width: $breakpointTablet) {
+                height: 26px;
+                margin-top: 5px;
+            }
+            @media all and (max-width: $breakpointMobileBig) {
+                width: 90px;
+            }
+            @media all and (max-width: $breakpointMobile) {
+                width: 75px;
+            }
         }
     }
 }

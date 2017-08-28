@@ -73,8 +73,19 @@ button {
   text-align: center;
   font-weight: 300;
   font-size: 14px;
-  line-height: 56px;
-  padding: 0 12px; }
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media all and (max-width: 768px) {
+    .cookies {
+      font-size: 13px; } }
+  @media all and (max-width: 400px) {
+    .cookies {
+      font-size: 11px; } }
+  @media all and (max-width: 320px) {
+    .cookies {
+      font-size: 10px; } }
   .cookies .cookies-content {
     font-family: 'Montserrat', sans-serif;
     color: #b6d9d4; }
@@ -93,6 +104,16 @@ button {
       color: #ffffff;
       margin-left: 12px;
       cursor: pointer; }
+      @media all and (max-width: 768px) {
+        .cookies .cookies-content .cookies-button {
+          height: 26px;
+          margin-top: 5px; } }
+      @media all and (max-width: 400px) {
+        .cookies .cookies-content .cookies-button {
+          width: 90px; } }
+      @media all and (max-width: 320px) {
+        .cookies .cookies-content .cookies-button {
+          width: 75px; } }
 
 .navbar {
   top: 56px;
