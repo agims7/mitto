@@ -359,7 +359,7 @@ button {
 
 ////// DESCRIPTION //////
 .description {
-    max-width: 1200px;
+    max-width: 1165px;
     height: 625px;
     background-color: white;
     font-family: 'Montserrat';
@@ -636,16 +636,16 @@ button {
             }
             .center-block {
                 position: relative;
-                left: 18px;
                 top: 3px;
-                padding-left: 24px;
+                left: 7px;
                 @media all and (max-width: $breakpointDesktop) {
                     width: 100%;
                     left: 0;
                     top: 3;
+                    padding-left: 48px;
                 }
                 @media all and (max-width: $breakpointTablet) {
-                    padding-left: 0;
+                    padding-left: 0px;
                 }
             }
         }
@@ -659,7 +659,6 @@ button {
                 left: 57px;
                 @media all and (max-width: $breakpointDesktop) {
                     width: 100%;
-                    padding-left: 18px;
                     left: 0;
                 }
             }
@@ -1235,3 +1234,15 @@ button {
         }
     }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .download {
+        .left-download {
+            .center-block {
+                left: 18px;
+                width: 100%;
+            }
+        }
+         /* Enter your style code */
+    }
+ }
