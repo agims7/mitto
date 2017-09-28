@@ -215,7 +215,7 @@ button {
     width: 100%;
     min-height: 813px;
     height: 100vh;
-    background: url("../images/background.svg");
+    background: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -261,6 +261,7 @@ button {
         text-align: left;
         position: absolute;
         top: 133px;
+        left: 87px;
         @media all and (max-width: $breakpointDesktop) {
             top: 101px;
             width: 347px;
@@ -281,6 +282,7 @@ button {
         text-align: left;
         position: absolute;
         top: 255px;
+        left: 87px;
         @media all and (max-width: $breakpointDesktop) {
             width: 323px;
             top: 208px;
@@ -296,6 +298,7 @@ button {
         height: 40px;
         line-height: 40px;
         top: 379px;
+        left: 87px;
         position: absolute;
         border: none;
         border-radius: 2px;
