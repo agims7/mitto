@@ -250,6 +250,9 @@ button {
             }
         }
     }
+    .home-container {
+        max-width: 1165px;
+    }
     .title {
         width: 405px;
         height: auto;
@@ -258,9 +261,7 @@ button {
         text-align: left;
         position: absolute;
         top: 133px;
-        left: 152px;
         @media all and (max-width: $breakpointDesktop) {
-            left: 61px;
             top: 101px;
             width: 347px;
             font-size: 36px;
@@ -268,7 +269,6 @@ button {
         @media all and (max-width: $breakpointTablet) {
             top: 179px;
             width: 296px;
-            left: 16px;
         }
     }
     .title-second {
@@ -281,16 +281,13 @@ button {
         text-align: left;
         position: absolute;
         top: 255px;
-        left: 152px;
         @media all and (max-width: $breakpointDesktop) {
             width: 323px;
             top: 208px;
-            left: 61px;
         }
         @media all and (max-width: $breakpointTablet) {
             top: 323px;
             width: 288px;
-            left: 16px;
         }
     }
     .downloadMitto {
@@ -299,7 +296,6 @@ button {
         height: 40px;
         line-height: 40px;
         top: 379px;
-        left: 152px;
         position: absolute;
         border: none;
         border-radius: 2px;
@@ -319,7 +315,6 @@ button {
         }
         @media all and (max-width: $breakpointDesktop) {
             top: 372px;
-            left: 61px;
         }
     }
     .downloadMitto:hover {

@@ -211,6 +211,9 @@ button {
       z-index: 10; }
     .home .youtube-container iframe:-webkit-full-screen {
       transform: none !important; }
+  .home .home-container {
+    max-width: 1165px;
+}    
   .home .title {
     width: 405px;
     height: auto;
@@ -219,7 +222,7 @@ button {
     text-align: left;
     position: absolute;
     top: 133px;
-    left: 152px; }
+    left: 89px; }
     @media all and (max-width: 1200px) {
       .home .title {
         left: 61px;
@@ -241,7 +244,7 @@ button {
     text-align: left;
     position: absolute;
     top: 255px;
-    left: 152px; }
+    left: 89px; }
     @media all and (max-width: 1200px) {
       .home .title-second {
         width: 323px;
@@ -258,7 +261,7 @@ button {
     height: 40px;
     line-height: 40px;
     top: 379px;
-    left: 152px;
+    left: 89px;
     position: absolute;
     border: none;
     border-radius: 2px;
