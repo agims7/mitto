@@ -565,6 +565,8 @@ button {
         .download .content .left .system {
           margin: 21px auto 0; } }
       .download .content .left .system .label-system {
+        position: relative;
+        bottom: 7px;
         width: 83px;
         height: 22px;
         font-family: "Montserrat";
@@ -915,6 +917,7 @@ button {
               margin-left: 16px;
               font-size: 12px; } }
         .contact .right .contact-form form textarea {
+          resize: none;
           width: 412px;
           height: 194px;
           border: none;

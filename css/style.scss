@@ -682,6 +682,8 @@ button {
                     margin: 21px auto 0;
                 }
                 .label-system {
+                    position: relative;
+                    bottom: 7px;
                     width: 83px;
                     height: 22px;
                     font-family: "Montserrat";
@@ -1067,6 +1069,7 @@ button {
                     }
                 }
                 textarea {
+                    resize: none;
                     width: 412px;
                     height: 194px;
                     border: none;
