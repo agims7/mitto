@@ -50,6 +50,12 @@ $(document).ready(function() {
         }, 800);
     });
 
+    /////////////// Close cookie ///////////////
+    $(".cookies-button").on('click', function() {
+        $(".cookies").css("display", "none");
+        $(".navbar").css("top", "0");
+    });
+
     /////////////// Video section ///////////////
 
     $(".video-link").on('click', function(event) {
@@ -73,9 +79,9 @@ $(document).ready(function() {
 
     var intervalFunctions = [second, third, fourth, first];
     var intervalIndex = 0;
-    // window.setInterval(function() {
-    //     intervalFunctions[intervalIndex++ % intervalFunctions.length]();
-    // }, 5000);
+    window.setInterval(function() {
+        intervalFunctions[intervalIndex++ % intervalFunctions.length]();
+    }, 5000);
 
     $(".paragraph-first").click(first);
     $(".paragraph-second").click(second);

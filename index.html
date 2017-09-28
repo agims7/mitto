@@ -4,27 +4,33 @@
 <head>
     <title>Mitto+</title>
     <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mitto+ najprostsze przesyłki kurierskie">
     <meta name="author" content="Michał Dydo michal1.dydo@gmail.com">
     <meta name="format-detection" content="telephone=no" />
     <meta name="keywords" content="Mitto+, Mitto Plus, MittoPlus, mittoplus, paczki, paczka, kurier, śledzenie przesyłek, przesyłki kurierskie, kurierzy, porównywarka kurierów, przesyłki kurierskie zagraniczne, firmy kurierskie, jak oszczędzać pieniądze, drobnica, logistyka zaopatrzenie, logistyka dystrybucja">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
 </head>
 
 <body>
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
+            i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
@@ -44,7 +50,7 @@
             player = new YT.Player('youtube-video', {
                 height: '500',
                 width: '100%',
-                videoId: 'UAaK-GKzAYA',
+                videoId: 'S_Rm7UlqMsQ',
                 playerVars: {
                     'autoplay': 0,
                     'controls': 1,
@@ -84,6 +90,62 @@
         }
     </script>
 
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter45783435 = new Ya.Metrika({
+                        id: 45783435,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/45783435" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-53LNNHT');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53LNNHT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="cookies">
+        <p class="cookies-content">Na tej stronie korzystamy z <span class="cookie"> ciasteczek</span>, aby była dla Ciebie bardziej przyjazna.
+            <button class="cookies-button">OK, dzięki!</button>
+        </p>
+    </div>
+
     <nav class="navbar">
         <div class="navbar-left">
             <a href="#home">
@@ -104,10 +166,11 @@
         <div class="youtube-container">
             <div id="youtube-video"></div>
         </div>
-        <div class="container">
+        <div class="container home-container">
             <p class="title">Najprostsze przesyłki kurierskie</p>
-            <p class="title-second">Naszym celem jest uproszczenie procesu wysyłania paczek do minimum, dlatego Mitto jest najprostszym narzędziem na rynku: łatwym w obsłudze, a jednocześnie kompleksowym.</p>
-            <a class="downloadMitto" href="http://mittoplus.pl/files/mittoplus.exe">
+            <p class="title-second">Naszym celem jest uproszczenie procesu wysyłania paczek do minimum, dlatego Mitto jest najprostszym narzędziem
+                na rynku: łatwym w obsłudze, a jednocześnie kompleksowym.</p>
+            <a class="downloadMitto" href="http://mittoplus.pl/files/mittoplus.msi">
                 <p>Pobierz Mitto+</p>
             </a>
         </div>
@@ -127,7 +190,8 @@
                 <p class="paragraph paragraph-second">Koszyk</p>
                 <p class="paragraph-second-second">Zlecenia mogą być dodawane do koszyka w później w prosty sposób zrealizowane</p>
                 <p class="paragraph paragraph-third">Historia zamówień</p>
-                <p class="paragraph-third-second">Historia zamówień jest Twoją Listą dotychczasowych zamówień, dzięki niej możesz sprawdzić status zamówienia i wydrukować list przewozowy</p>
+                <p class="paragraph-third-second">Historia zamówień jest Twoją Listą dotychczasowych zamówień, dzięki niej możesz sprawdzić status zamówienia
+                    i wydrukować list przewozowy</p>
                 <p class="paragraph paragraph-fourth">Oszczędności</p>
                 <p class="paragraph-fourth-second">Mitto+ umożliwia w prosty sposób monitorowanie oszędności</p>
             </div>
@@ -150,8 +214,9 @@
 
     <section id="prices" class="prices">
         <p class="title">Cennik</p>
-        <p class="prices-description-1">Mitto+ oferuje jedne z najbardziej konkurencyjnych na rynku cen za usługi przewozowe. Dodatkowo honorujemy tych, którzy wysyłają najwięcej.</p>
-        <a class="full-price-list" href="http://mittoplus.pl/files/cennik.pdf">Pełny cennik Mitto+</a>
+        <p class="prices-description-1">Mitto+ oferuje jedne z najbardziej konkurencyjnych na rynku cen za usługi przewozowe. Dodatkowo honorujemy tych,
+            którzy wysyłają najwięcej.</p>
+        <a class="full-price-list" target="_blank" href="http://mittoplus.pl/files/cennik.pdf">Pełny cennik Mitto+</a>
 
         <div class="options">
             <div class="option-block brown active-option">
@@ -187,8 +252,9 @@
                 <div class="center-block">
                     <p class="label">Pobierz aplikację</p>
                     <p class="label-description">Mitto+ jest dostępne jako aplikacja desktopowa.
-                        <br class="mobile-new-line"> Pobierz ją, uruchom plik instalatora i postępuj zgodnie instrukcją instalacji. </p>
-                    <a class="white-button" href="http://mittoplus.pl/files/aplikacja.exe">
+                        <br class="mobile-new-line"> Pobierz ją, uruchom plik instalatora i postępuj zgodnie instrukcją instalacji.
+                    </p>
+                    <a class="white-button" href="http://mittoplus.pl/files/mittoplus.msi">
                         <span>Pobierz Mitto+</span>
                         <img class="icon-download" src="images/icon-download.svg">
                     </a>
@@ -210,7 +276,7 @@
                     <p class="package-content">
                         <i class="circle fa fa-check"></i> Szablony XLS do wysyłki masowej</p>
                     <div class="package-download">
-                        <a class="package-download-content" href="http://mittoplus.pl/files/szablon.xlsx">Pobierz szablon XLS</a>
+                        <a class="package-download-content" href="http://mittoplus.pl/files/szablon.xlsm">Pobierz szablon XLS</a>
                         <img src="images/icon-download-small.svg" class="icon-download-small">
                     </div>
                 </div>
@@ -224,7 +290,8 @@
                     Powiedz nam, czego potrzebujesz
                 </p>
                 <div class="mobile-content">
-                    <p class="contact-description">Mitto+ jest narzędziem, które stworzone jest dla użytkowników, dlatego z radością odpowiemy na Twoje pytania i zastanowimy się wspólnie, jak szybciej i taniej wysyłać Twoje przesyłki.</p>
+                    <p class="contact-description">Mitto+ jest narzędziem, które stworzone jest dla użytkowników, dlatego z radością odpowiemy na Twoje
+                        pytania i zastanowimy się wspólnie, jak szybciej i taniej wysyłać Twoje przesyłki.</p>
                     <div class="mobile-right">
                         <p class="contact-details-email">
                             kontakt@mittoplus.pl
@@ -257,6 +324,332 @@
             </div>
         </div>
     </section>
+
+    <!-- Moooodalll -->
+
+    <div class="modal">
+        <div class="modal-header">
+            <img class="header-close-icon" src="images/close-icon-modal" alt="Close icon">
+            <p class="header-text">Cennik</p>
+        </div>
+        <div class="modal-content">
+            <div class="package-header">
+                <div class="package-header-content">
+                    <img class="package-header-icon" src="images/brazowy" alt="Close icon">
+                    <h2 class="package-name">Pakiet brązowy</h2>
+                    <p class="package-text">Do 100 paczek miesięcznie</p>
+                </div>
+
+                <!-- h1 {
+                            overflow: hidden;
+                            text-align: center;
+                        }
+                        h1:before,
+                        h1:after {
+                            background-color: #000;
+                            content: "";
+                            display: inline-block;
+                            height: 1px;
+                            position: relative;
+                            vertical-align: middle;
+                            width: 50%;
+                        }
+                        h1:before {
+                            right: 0.5em;
+                            margin-left: -50%;
+                        }
+                        h1:after {
+                            left: 0.5em;
+                            margin-right: -50%;
+                        } -->
+            </div>
+            <div class="package-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Przewoźnkik</th>
+                            <th>Waga</th>
+                            <th>Cena netto</th>
+                            <th>Cena brutto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Do 30 kg</td>
+                            <td>10,50</td>
+                            <td>12,92</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 5 kg</td>
+                            <td>13,08</td>
+                            <td>16,09</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 10 kg</td>
+                            <td>14,00</td>
+                            <td>17,22</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 20 kg</td>
+                            <td>15,23</td>
+                            <td>18,73</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 30 kg</td>
+                            <td>15,89</td>
+                            <td>19,54</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="package-header">
+                <div class="package-header-content">
+                    <img class="package-header-icon" src="images/srebrny" alt="Close icon">
+                    <h2 class="package-name">Pakiet srebrny</h2>
+                    <p class="package-text">Od 100 paczek miesięcznie</p>
+                </div>
+            </div>
+            <div class="package-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Przewoźnkik</th>
+                            <th>Waga</th>
+                            <th>Cena netto</th>
+                            <th>Cena brutto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Do 30 kg</td>
+                            <td>10,15</td>
+                            <td>12,48</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 5 kg</td>
+                            <td>12,64</td>
+                            <td>15,55</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 10 kg</td>
+                            <td>13,53</td>
+                            <td>16,64</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 20 kg</td>
+                            <td>14,72</td>
+                            <td>18,11</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 30 kg</td>
+                            <td>15,36</td>
+                            <td>18,89</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="package-header">
+                <div class="package-header-content">
+                    <img class="package-header-icon" src="images/zloty" alt="Close icon">
+                    <h2 class="package-name">Pakiet złoty</h2>
+                    <p class="package-text">Od 500 paczek miesięcznie</p>
+                </div>
+            </div>
+            <div class="package-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Przewoźnkik</th>
+                            <th>Waga</th>
+                            <th>Cena netto</th>
+                            <th>Cena brutto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Do 30 kg</td>
+                            <td>9,80</td>
+                            <td>12,05</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 5 kg</td>
+                            <td>12,21</td>
+                            <td>15,02</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 10 kg</td>
+                            <td>13,06</td>
+                            <td>16,06</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 20 kg</td>
+                            <td>14,21</td>
+                            <td>17,48</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 30 kg</td>
+                            <td>14,83</td>
+                            <td>18,24</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="package-header">
+                <div class="package-header-content">
+                    <img class="package-header-icon" src="images/platynowy" alt="Close icon">
+                    <h2 class="package-name">Pakiet platynowy</h2>
+                    <p class="package-text">Od 2000 paczek miesięcznie</p>
+                </div>
+            </div>
+            <div class="package-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Przewoźnkik</th>
+                            <th>Waga</th>
+                            <th>Cena netto</th>
+                            <th>Cena brutto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Do 30 kg</td>
+                            <td>9,10</td>
+                            <td>11,19</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 5 kg</td>
+                            <td>11,34</td>
+                            <td>13,95</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 10 kg</td>
+                            <td>12,13</td>
+                            <td>14,92</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 20 kg</td>
+                            <td>13,20</td>
+                            <td>16,24</td>
+                        </tr>
+                        <tr>
+                            <td>DHL</td>
+                            <td>Do 30 kg</td>
+                            <td>13,77</td>
+                            <td>16,94</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="package-header">
+                <div class="package-header-content">
+                    <img class="package-header-icon" src="images/domyslny" alt="Close icon">
+                    <h2 class="package-name-center">Usługi dodatkowe</h2>
+                </div>
+            </div>
+            <div class="package-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Przewoźnkik</th>
+                            <th>Usługa</th>
+                            <th>Cena netto</th>
+                            <th>Cena brutto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Zwrot dokumentów</td>
+                            <td>2,00</td>
+                            <td>2,46</td>
+                        </tr>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Dostawa w sobotę</td>
+                            <td>25,00</td>
+                            <td>30,75</td>
+                        </tr>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Dostarczenie za pobraniem</td>
+                            <td>2,00</td>
+                            <td>2,46</td>
+                        </tr>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Doręczenie w godzinach 18-22</td>
+                            <td>25,00</td>
+                            <td>30,75</td>
+                        </tr>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Doręczenie do godziny 9</td>
+                            <td>30,00</td>
+                            <td>36,90</td>
+                        </tr>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Doręczenie do godziny 12</td>
+                            <td>35,00</td>
+                            <td>18,45</td>
+                        </tr>
+                        <tr>
+                            <td>Patron Services</td>
+                            <td>Dodatkowe ubezpieczenie do 500 zl</td>
+                            <td>0,20</td>
+                            <td>0,25</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script type="text/javascript">
+        window.__lc = window.__lc || {};
+        window.__lc.license = 9130255;
+        (function () {
+            var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+            lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+        })();
+    </script>
+    <!-- End of LiveChat code -->
 </body>
 
 </html>
