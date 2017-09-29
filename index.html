@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
 </head>
 
 <body>
@@ -186,13 +186,17 @@
         <div class="left-small">
             <div class="center-block">
                 <p class="paragraph paragraph-first active-paragraph">Audyt transportu</p>
-                <p class="paragraph-first-second">Prowadzimy bezpłatny audyt, dzięki któremu znajdziesz najlepszego przewoźnika dopasowanego do rodzaju przesyłki. Chcesz poznać szczegóły? Skontaktuj się z Nami poprzez czat lub formularz kontaktowy.</p>
+                <p class="paragraph-first-second">Prowadzimy bezpłatny audyt, dzięki któremu znajdziesz najlepszego przewoźnika dopasowanego do rodzaju przesyłki.
+                    Chcesz poznać szczegóły? Skontaktuj się z Nami poprzez czat lub formularz kontaktowy.</p>
                 <p class="paragraph paragraph-second">Sugestie</p>
-                <p class="paragraph-second-second">Nasze narzędzie podpowie, z usług którego przewoźnika najlepiej skorzystać. Bazując na analizach przeprowadzanych w czasie rzeczywistym.</p>
+                <p class="paragraph-second-second">Nasze narzędzie podpowie, z usług którego przewoźnika najlepiej skorzystać. Bazując na analizach przeprowadzanych
+                    w czasie rzeczywistym.</p>
                 <p class="paragraph paragraph-third">Wysyłka</p>
-                <p class="paragraph-third-second">80% przedsiębiorców nieefektywnie zarządza wydatkami oraz kosztami związanymi z wysyłką. Mitto+ oferuje jedne z najbardziej konkurencyjnych cen na rynku za usługi przewozowe. Bez ukrytych opłat. Rzetelnie. Intuicyjnie.</p>
+                <p class="paragraph-third-second">80% przedsiębiorców nieefektywnie zarządza wydatkami oraz kosztami związanymi z wysyłką. Mitto+ oferuje jedne
+                    z najbardziej konkurencyjnych cen na rynku za usługi przewozowe. Bez ukrytych opłat. Rzetelnie. Intuicyjnie.</p>
                 <p class="paragraph paragraph-fourth">Moduł oszczędności </p>
-                <p class="paragraph-fourth-second">Mitto+ w prosty sposób pozwala na monitorowanie oszczędności. Przekonaj się sam ile dzięki Nam zaoszczędzi Twoja firma.</p>
+                <p class="paragraph-fourth-second">Mitto+ w prosty sposób pozwala na monitorowanie oszczędności. Przekonaj się sam ile dzięki Nam zaoszczędzi
+                    Twoja firma.</p>
             </div>
         </div>
         <div class="right-small">
@@ -218,25 +222,25 @@
         <a class="full-price-list" target="_blank" href="http://mittoplus.pl/files/cennik.pdf">Pełny cennik Mitto+</a>
 
         <div class="options">
-            <div class="option-block brown active-option">
+            <div class="option-block brown brown-price active-option">
                 <img class="option-image" src="images/brazowy.svg" alt="optionLogo">
                 <p class="option-top brown-color">Brązowy</p>
                 <p class="option-middle">do 100 paczek <br>miesięcznie</p>
                 <p class="option-bottom">po prostu tanio</p>
             </div>
-            <div class="option-block silver">
+            <div class="option-block silver silver-price">
                 <img class="option-image" src="images/srebrny.svg" alt="optionLogo">
                 <p class="option-top silver-color">Srebrny</p>
                 <p class="option-middle">powyżej 100 paczek <br>miesięcznie</p>
                 <p class="option-bottom">jeszcze 5% taniej</p>
             </div>
-            <div class="option-block gold">
+            <div class="option-block gold gold-price">
                 <img class="option-image" src="images/zloty.svg" alt="optionLogo">
                 <p class="option-top gold-color">Złoty</p>
                 <p class="option-middle">powyżej 500 paczek <br>miesięcznie</p>
                 <p class="option-bottom">jeszcze 10% taniej</p>
             </div>
-            <div class="option-block platinum">
+            <div class="option-block platinum platinum-price">
                 <img class="option-image" src="images/platynowy.svg" alt="optionLogo">
                 <p class="option-top platinum-color">Platynowy</p>
                 <p class="option-middle">powyżej 2000 paczek <br>miesięcznie</p>
@@ -326,317 +330,591 @@
 
     <!-- Moooodalll -->
 
-    <div class="modal">
-        <div class="modal-header">
-            <img class="header-close-icon" src="images/close-icon-modal" alt="Close icon">
-            <p class="header-text">Cennik</p>
-        </div>
-        <div class="modal-content">
-            <div class="package-header">
-                <div class="package-header-content">
-                    <img class="package-header-icon" src="images/brazowy" alt="Close icon">
-                    <h2 class="package-name">Pakiet brązowy</h2>
-                    <p class="package-text">Do 100 paczek miesięcznie</p>
+    <div class="modal" id="modal">
+        <div id="modal-container">
+            <div class="modal-header">
+                <img class="header-close-icon" src="images/close-icon-modal.svg" alt="Close icon">
+                <p class="header-text">Cennik</p>
+            </div>
+            <div class="modal-content">
+                <div class="package-header brown brown-element">
+                    <div class="package-header-content">
+                        <div class="package-header-icon">
+                            <img src="images/brazowy.svg" alt="Close icon">
+                        </div>
+                        <div class="package-header-text">
+                            <h2 class="package-name">Pakiet brązowy</h2>
+                            <p class="package-text">do 100 paczek miesięcznie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-table">
+                    <table class="courier">
+                        <thead>
+                            <tr>
+                                <th>Przewoźnkik</th>
+                                <th>Waga</th>
+                                <th>Cena netto</th>
+                                <th>Cena brutto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="thicker-border-bottom">
+                                <td>Patron Services
+                                    <p class="mobile-text">Do 30 kg</p>
+                                </td>
+                                <td>Do 30 kg</td>
+                                <td>10,50</td>
+                                <td>12,92</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 50 kg</p>
+                                </td>
+                                <td>Do 5 kg</td>
+                                <td>13,08</td>
+                                <td>16,09</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 10 kg</p>
+                                </td>
+                                <td>Do 10 kg</td>
+                                <td>14,00</td>
+                                <td>17,22</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 20 kg</p>
+                                </td>
+                                <td>Do 20 kg</td>
+                                <td>15,23</td>
+                                <td>18,73</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 30 kg</p>
+                                </td>
+                                <td>Do 30 kg</td>
+                                <td>15,89</td>
+                                <td>19,54</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <!-- h1 {
-                            overflow: hidden;
-                            text-align: center;
-                        }
-                        h1:before,
-                        h1:after {
-                            background-color: #000;
-                            content: "";
-                            display: inline-block;
-                            height: 1px;
-                            position: relative;
-                            vertical-align: middle;
-                            width: 50%;
-                        }
-                        h1:before {
-                            right: 0.5em;
-                            margin-left: -50%;
-                        }
-                        h1:after {
-                            left: 0.5em;
-                            margin-right: -50%;
-                        } -->
-            </div>
-            <div class="package-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Przewoźnkik</th>
-                            <th>Waga</th>
-                            <th>Cena netto</th>
-                            <th>Cena brutto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Do 30 kg</td>
-                            <td>10,50</td>
-                            <td>12,92</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 5 kg</td>
-                            <td>13,08</td>
-                            <td>16,09</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 10 kg</td>
-                            <td>14,00</td>
-                            <td>17,22</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 20 kg</td>
-                            <td>15,23</td>
-                            <td>18,73</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 30 kg</td>
-                            <td>15,89</td>
-                            <td>19,54</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <div class="package-header silver silver-element ">
+                    <div class="package-header-content">
+                        <img class="package-header-icon" src="images/srebrny.svg" alt="Close icon">
+                        <div class="package-header-text">
+                            <h2 class="package-name">Pakiet srebrny</h2>
+                            <p class="package-text">Od 100 paczek miesięcznie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-table">
+                    <table class="courier">
+                        <thead>
+                            <tr>
+                                <th>Przewoźnkik</th>
+                                <th>Waga</th>
+                                <th>Cena netto</th>
+                                <th>Cena brutto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="thicker-border-bottom">
+                                <td>Patron Services
+                                    <p class="mobile-text">Do 30 kg</p>
+                                </td>
+                                <td>Do 30 kg</td>
+                                <td>10,15</td>
+                                <td>12,48</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 5 kg</p>
+                                </td>
+                                <td>Do 5 kg</td>
+                                <td>12,64</td>
+                                <td>15,55</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 10 kg</p>
+                                </td>
+                                <td>Do 10 kg</td>
+                                <td>13,53</td>
+                                <td>16,64</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 20 kg</p>
+                                </td>
+                                <td>Do 20 kg</td>
+                                <td>14,72</td>
+                                <td>18,11</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 30 kg</p>
+                                </td>
+                                <td>Do 30 kg</td>
+                                <td>15,36</td>
+                                <td>18,89</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-            <div class="package-header">
-                <div class="package-header-content">
-                    <img class="package-header-icon" src="images/srebrny" alt="Close icon">
-                    <h2 class="package-name">Pakiet srebrny</h2>
-                    <p class="package-text">Od 100 paczek miesięcznie</p>
+                <div class="package-header gold gold-element">
+                    <div class="package-header-content">
+                        <img class="package-header-icon" src="images/zloty.svg" alt="Close icon">
+                        <div class="package-header-text">
+                            <h2 class="package-name">Pakiet złoty</h2>
+                            <p class="package-text">Od 500 paczek miesięcznie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-table">
+                    <table class="courier">
+                        <thead>
+                            <tr>
+                                <th>Przewoźnkik</th>
+                                <th>Waga</th>
+                                <th>Cena netto</th>
+                                <th>Cena brutto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="thicker-border-bottom">
+                                <td>Patron Services
+                                    <p class="mobile-text">Do 30 kg</p>
+                                </td>
+                                <td>Do 30 kg</td>
+                                <td>9,80</td>
+                                <td>12,05</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 5 kg</p>
+                                </td>
+                                <td>Do 5 kg</td>
+                                <td>12,21</td>
+                                <td>15,02</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 10 kg</p>
+                                </td>
+                                <td>Do 10 kg</td>
+                                <td>13,06</td>
+                                <td>16,06</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 20 kg</p>
+                                </td>
+                                <td>Do 20 kg</td>
+                                <td>14,21</td>
+                                <td>17,48</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 30 kg</p>
+                                </td>
+                                <td>Do 30 kg</td>
+                                <td>14,83</td>
+                                <td>18,24</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="package-header platinum platinum-element">
+                    <div class="package-header-content">
+                        <img class="package-header-icon" src="images/platynowy.svg" alt="Close icon">
+                        <div class="package-header-text">
+                            <h2 class="package-name">Pakiet platynowy</h2>
+                            <p class="package-text">Od 2000 paczek miesięcznie</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-table">
+                    <table class="courier">
+                        <thead>
+                            <tr>
+                                <th>Przewoźnkik</th>
+                                <th>Waga</th>
+                                <th>Cena netto</th>
+                                <th>Cena brutto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="thicker-border-bottom">
+                                <td>Patron Services
+                                    <p class="mobile-text">Do 30 kg</p>
+                                </td>
+                                <td>Do 30 kg</td>
+                                <td>9,10</td>
+                                <td>11,19</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 5 kg</p>
+                                </td>
+                                <td>Do 5 kg</td>
+                                <td>11,34</td>
+                                <td>13,95</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 10 kg</p>
+                                </td>
+                                <td>Do 10 kg</td>
+                                <td>12,13</td>
+                                <td>14,92</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 20 kg</p>
+                                </td>
+                                <td>Do 20 kg</td>
+                                <td>13,20</td>
+                                <td>16,24</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 30 kg</p>
+                                </td>
+                                <td>Do 30 kg</td>
+                                <td>13,77</td>
+                                <td>16,94</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="package-header default">
+                    <div class="package-header-content">
+                        <img class="package-header-icon" src="images/domyslny.svg" alt="Close icon">
+                        <div class="package-header-text">
+                            <h2 class="package-name-center">Usługi dodatkowe</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-table">
+                    <table class="services">
+                        <thead>
+                            <tr>
+                                <th>Przewoźnkik</th>
+                                <th>Usługa</th>
+                                <th>Cena netto</th>
+                                <th>Cena brutto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Zwrot dokumentów</p>
+                                </td>
+                                <td>Zwrot dokumentów</td>
+                                <td>2,00</td>
+                                <td>2,46</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Dostawa w sobotę</p>
+                                </td>
+                                <td>Dostawa w sobotę</td>
+                                <td>25,00</td>
+                                <td>30,75</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Dostarczenie za pobraniem</p>
+                                </td>
+                                <td>Dostarczenie za pobraniem</td>
+                                <td>2,00</td>
+                                <td>2,46</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Doręczenie w godzinach 18-22</p>
+                                </td>
+                                <td>Doręczenie w godzinach 18-22</td>
+                                <td>25,00</td>
+                                <td>30,75</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Doręczenie do godziny 9</p>
+                                </td>
+                                <td>Doręczenie do godziny 9</td>
+                                <td>30,00</td>
+                                <td>36,90</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Doręczenie do godziny 12</p>
+                                </td>
+                                <td>Doręczenie do godziny 12</td>
+                                <td>15,00</td>
+                                <td>18,45</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Dodatkowe ubezpieczenie do 500 zł</p>
+                                </td>
+                                <td>Dodatkowe ubezpieczenie do 500 zł</td>
+                                <td>0,20</td>
+                                <td>0,25</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Dodatkowe ubezpieczenie od 500 do 5000 zł</p>
+                                </td>
+                                <td>Dodatkowe ubezpieczenie od 500 do 5000 zł</td>
+                                <td>0,40</td>
+                                <td>0,49</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Dodatkowe ubezpieczenie od 5000 do 20000 zł</p>
+                                </td>
+                                <td>Dodatkowe ubezpieczenie od 5000 do 20000 zł</td>
+                                <td>2,00</td>
+                                <td>2,46</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Dodatkowe ubezpieczenie od 20000 do 50000 zł</p>
+                                </td>
+                                <td>Dodatkowe ubezpieczenie od 20000 do 50000 zł</td>
+                                <td>10,00</td>
+                                <td>12,30</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Awizacja telefoniczna</p>
+                                </td>
+                                <td>Awizacja telefoniczna</td>
+                                <td>2,00</td>
+                                <td>2,46</td>
+                            </tr>
+                            <tr>
+                                <td>Patron Services
+                                    <p class="mobile-text">Awizacja email</p>
+                                </td>
+                                <td>Awizacja email</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                            </tr>
+                            <tr class="thicker-border-bottom">
+                                <td>Patron Services
+                                    <p class="mobile-text">Awizacja sms</p>
+                                </td>
+                                <td>Awizacja sms</td>
+                                <td>0,50</td>
+                                <td>0,62</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Zwrot dokumentów</p>
+                                </td>
+                                <td>Zwrot dokumentów</td>
+                                <td>10,00</td>
+                                <td>12,30</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Doręczenie w godzinach 18-22</p>
+                                </td>
+                                <td>Doręczenie w godzinach 18-22</td>
+                                <td>10,00</td>
+                                <td>12,30</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Doręczenie do 12</p>
+                                </td>
+                                <td>Doręczenie do 12</td>
+                                <td>15,00</td>
+                                <td>18,45</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Doręczenie lub odbiór w sobotę</p>
+                                </td>
+                                <td>Doręczenie lub odbiór w sobotę</td>
+                                <td>15,00</td>
+                                <td>18,45</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="package-header default">
+                    <div class="package-header-content">
+                        <img class="package-header-icon" src="images/pallete.svg" alt="Close icon">
+                        <div class="package-header-text">
+                            <h2 class="package-name-center">Palety</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-table">
+                    <table class="courier">
+                        <thead>
+                            <tr>
+                                <th>Przewoźnkik</th>
+                                <th>Waga</th>
+                                <th>Cena netto</th>
+                                <th>Cena brutto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Poczta Polska
+                                    <p class="mobile-text">Do 400 kg</p>
+                                </td>
+                                <td>Do 400 kg</td>
+                                <td>129,00</td>
+                                <td>158,67</td>
+                            </tr>
+                            <tr class="thicker-border-bottom">
+                                <td>Poczta Polska
+                                    <p class="mobile-text">Do 1000 kg</p>
+                                </td>
+                                <td>Do 1000 kg</td>
+                                <td>157,00</td>
+                                <td>193,11</td>
+                            </tr>
+                            <tr>
+                                <td>Erotrans
+                                    <p class="mobile-text">Do 400 kg</p>
+                                </td>
+                                <td>Do 400 kg</td>
+                                <td>110,00</td>
+                                <td>135,30</td>
+                            </tr>
+                            <tr class="thicker-border-bottom">
+                                <td>Erotrans
+                                    <p class="mobile-text">Do 1000 kg</p>
+                                </td>
+                                <td>Do 1000 kg</td>
+                                <td>130,00</td>
+                                <td>159,90</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 400 kg</p>
+                                </td>
+                                <td>Do 400 kg</td>
+                                <td>99,00</td>
+                                <td>121,77</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 600 kg</p>
+                                </td>
+                                <td>Do 600 kg</td>
+                                <td>105,00</td>
+                                <td>129,15</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 800 kg</p>
+                                </td>
+                                <td>Do 800 kg</td>
+                                <td>130,00</td>
+                                <td>159,90</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Do 1000 kg</p>
+                                </td>
+                                <td>Do 1000 kg</td>
+                                <td>166,00</td>
+                                <td>204,18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="package-header default">
+                    <div class="package-header-content">
+                        <img class="package-header-icon" src="images/pallete.svg" alt="Close icon">
+                        <div class="package-header-text">
+                            <h2 class="package-name-center">Usługi dodatkowe</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="package-table">
+                    <table class="services">
+                        <thead>
+                            <tr>
+                                <th>Przewoźnkik</th>
+                                <th>Waga</th>
+                                <th>Cena netto</th>
+                                <th>Cena brutto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Poczta Polska
+                                    <p class="mobile-text">Pobranie Standard (zwrot do 14 dni roboczych)</p>
+                                </td>
+                                <td>Pobranie Standard (zwrot do 14 dni roboczych)</td>
+                                <td>10,00</td>
+                                <td>12,30</td>
+                            </tr>
+                            <tr>
+                                <td>Poczta Polska
+                                    <p class="mobile-text">Pobranie Ekspres (zwrot do 4-5 dni roboczych)</p>
+                                </td>
+                                <td>Pobranie Ekspres (zwrot do 4-5 dni roboczych)</td>
+                                <td>25,00</td>
+                                <td>30,75</td>
+                            </tr>
+                            <tr>
+                                <td>Poczta Polska
+                                    <p class="mobile-text">Ubezpieczenie SuperProtect (do 50.000 PLN)</p>
+                                </td>
+                                <td>Ubezpieczenie SuperProtect (do 50.000 PLN)</td>
+                                <td>20,00</td>
+                                <td>24,60</td>
+                            </tr>
+                            <tr class="thicker-border-bottom">
+                                <td>Poczta Polska
+                                    <p class="mobile-text">Uwaga, szkło/kruche!</p>
+                                </td>
+                                <td>Uwaga, szkło/kruche!</td>
+                                <td>15,00</td>
+                                <td>18,45</td>
+                            </tr>
+                            <tr class="thicker-border-bottom">
+                                <td>Erotrans
+                                    <p class="mobile-text">Pobranie Standard (zwrot do 14 dni roboczych)</p>
+                                </td>
+                                <td>Pobranie Standard (zwrot do 14 dni roboczych)</td>
+                                <td>10,00</td>
+                                <td>12,30</td>
+                            </tr>
+                            <tr>
+                                <td>DHL
+                                    <p class="mobile-text">Dokumenty zwrotne</p>
+                                </td>
+                                <td>Dokumenty zwrotne</td>
+                                <td>10,00</td>
+                                <td>12,30</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="package-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Przewoźnkik</th>
-                            <th>Waga</th>
-                            <th>Cena netto</th>
-                            <th>Cena brutto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Do 30 kg</td>
-                            <td>10,15</td>
-                            <td>12,48</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 5 kg</td>
-                            <td>12,64</td>
-                            <td>15,55</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 10 kg</td>
-                            <td>13,53</td>
-                            <td>16,64</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 20 kg</td>
-                            <td>14,72</td>
-                            <td>18,11</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 30 kg</td>
-                            <td>15,36</td>
-                            <td>18,89</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="package-header">
-                <div class="package-header-content">
-                    <img class="package-header-icon" src="images/zloty" alt="Close icon">
-                    <h2 class="package-name">Pakiet złoty</h2>
-                    <p class="package-text">Od 500 paczek miesięcznie</p>
-                </div>
-            </div>
-            <div class="package-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Przewoźnkik</th>
-                            <th>Waga</th>
-                            <th>Cena netto</th>
-                            <th>Cena brutto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Do 30 kg</td>
-                            <td>9,80</td>
-                            <td>12,05</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 5 kg</td>
-                            <td>12,21</td>
-                            <td>15,02</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 10 kg</td>
-                            <td>13,06</td>
-                            <td>16,06</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 20 kg</td>
-                            <td>14,21</td>
-                            <td>17,48</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 30 kg</td>
-                            <td>14,83</td>
-                            <td>18,24</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="package-header">
-                <div class="package-header-content">
-                    <img class="package-header-icon" src="images/platynowy" alt="Close icon">
-                    <h2 class="package-name">Pakiet platynowy</h2>
-                    <p class="package-text">Od 2000 paczek miesięcznie</p>
-                </div>
-            </div>
-            <div class="package-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Przewoźnkik</th>
-                            <th>Waga</th>
-                            <th>Cena netto</th>
-                            <th>Cena brutto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Do 30 kg</td>
-                            <td>9,10</td>
-                            <td>11,19</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 5 kg</td>
-                            <td>11,34</td>
-                            <td>13,95</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 10 kg</td>
-                            <td>12,13</td>
-                            <td>14,92</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 20 kg</td>
-                            <td>13,20</td>
-                            <td>16,24</td>
-                        </tr>
-                        <tr>
-                            <td>DHL</td>
-                            <td>Do 30 kg</td>
-                            <td>13,77</td>
-                            <td>16,94</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="package-header">
-                <div class="package-header-content">
-                    <img class="package-header-icon" src="images/domyslny" alt="Close icon">
-                    <h2 class="package-name-center">Usługi dodatkowe</h2>
-                </div>
-            </div>
-            <div class="package-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Przewoźnkik</th>
-                            <th>Usługa</th>
-                            <th>Cena netto</th>
-                            <th>Cena brutto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Zwrot dokumentów</td>
-                            <td>2,00</td>
-                            <td>2,46</td>
-                        </tr>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Dostawa w sobotę</td>
-                            <td>25,00</td>
-                            <td>30,75</td>
-                        </tr>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Dostarczenie za pobraniem</td>
-                            <td>2,00</td>
-                            <td>2,46</td>
-                        </tr>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Doręczenie w godzinach 18-22</td>
-                            <td>25,00</td>
-                            <td>30,75</td>
-                        </tr>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Doręczenie do godziny 9</td>
-                            <td>30,00</td>
-                            <td>36,90</td>
-                        </tr>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Doręczenie do godziny 12</td>
-                            <td>35,00</td>
-                            <td>18,45</td>
-                        </tr>
-                        <tr>
-                            <td>Patron Services</td>
-                            <td>Dodatkowe ubezpieczenie do 500 zl</td>
-                            <td>0,20</td>
-                            <td>0,25</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-
-
         </div>
     </div>
-
-
-
-
-
-
-
 
     <!-- Start of LiveChat (www.livechatinc.com) code -->
     <script type="text/javascript">
