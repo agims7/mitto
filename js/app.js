@@ -81,7 +81,7 @@ $(document).ready(function() {
     var intervalIndex = 0;
     window.setInterval(function() {
         intervalFunctions[intervalIndex++ % intervalFunctions.length]();
-    }, 5000);
+    }, 5500);
 
     $(".paragraph-first").click(first);
     $(".paragraph-second").click(second);

@@ -182,7 +182,7 @@ button {
   width: 100%;
   min-height: 813px;
   height: 100vh;
-  background: url("../images/background.svg");
+  background: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -212,8 +212,7 @@ button {
     .home .youtube-container iframe:-webkit-full-screen {
       transform: none !important; }
   .home .home-container {
-    max-width: 1165px;
-}    
+    max-width: 1165px; }
   .home .title {
     width: 405px;
     height: auto;
@@ -222,18 +221,16 @@ button {
     text-align: left;
     position: absolute;
     top: 133px;
-    left: 89px; }
+    left: 87px; }
     @media all and (max-width: 1200px) {
       .home .title {
-        left: 61px;
         top: 101px;
         width: 347px;
         font-size: 36px; } }
     @media all and (max-width: 768px) {
       .home .title {
         top: 179px;
-        width: 296px;
-        left: 16px; } }
+        width: 296px; } }
   .home .title-second {
     width: 558px;
     height: auto;
@@ -244,24 +241,22 @@ button {
     text-align: left;
     position: absolute;
     top: 255px;
-    left: 89px; }
+    left: 87px; }
     @media all and (max-width: 1200px) {
       .home .title-second {
         width: 323px;
-        top: 208px;
-        left: 61px; } }
+        top: 208px; } }
     @media all and (max-width: 768px) {
       .home .title-second {
         top: 323px;
-        width: 288px;
-        left: 16px; } }
+        width: 288px; } }
   .home .downloadMitto {
     text-decoration: none;
     width: 156px;
     height: 40px;
     line-height: 40px;
     top: 379px;
-    left: 89px;
+    left: 87px;
     position: absolute;
     border: none;
     border-radius: 2px;
@@ -280,8 +275,7 @@ button {
       color: #ffffff; }
     @media all and (max-width: 1200px) {
       .home .downloadMitto {
-        top: 372px;
-        left: 61px; } }
+        top: 372px; } }
   .home .downloadMitto:hover {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25); }
   .home .video-box {
@@ -619,6 +613,8 @@ button {
         .download .content .left .system {
           margin: 21px auto 0; } }
       .download .content .left .system .label-system {
+        position: relative;
+        bottom: 7px;
         width: 83px;
         height: 22px;
         font-family: "Montserrat";
