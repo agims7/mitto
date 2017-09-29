@@ -13,9 +13,9 @@
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-imagemin": "^2.0.1",
-    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-uglify": "^3.1.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^1.2.1",
+    "grunt-sass": "^2.0.0",
     "normalize.css": "^7.0.0",
     "youtube-video-js": "^1.6.2"
   }
