@@ -16,10 +16,6 @@
     "grunt-contrib-uglify": "^3.1.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
-<<<<<<< HEAD
-=======
-    "node-sass": "^4.5.3",
->>>>>>> f0ae4efd0b6055a1a577a5497266ac84d012a29f
     "normalize.css": "^7.0.0",
     "youtube-video-js": "^1.6.2"
   },

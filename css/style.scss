@@ -3,6 +3,7 @@
 $brownish-orange: #de5628;
 $texts-color: #333333;
 $breakpointDesktop: 1200px;
+$breakpointGrid: 1024px;
 $breakpointTablet: 768px;
 $breakpointMobileBig: 400px;
 $breakpointMobile: 320px;
@@ -17,6 +18,7 @@ $breakpointMobile: 320px;
 body {
     position: relative;
     width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -24,6 +26,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    max-width: 976px;
+    @media all and (max-width: $breakpointGrid) {
+        margin: 0 24px;
+    }
+    @media all and (max-width: $breakpointTablet) {
+        margin: 0 16px;
+    }
 }
 
 button {
@@ -65,6 +74,18 @@ button {
     overflow: hidden;
 }
 
+.left-small {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    @media all and (max-width: $breakpointGrid) {
+        width: 50%;
+    }
+}
+
 .right {
     width: 50%;
     display: flex;
@@ -72,6 +93,18 @@ button {
     align-items: center;
     position: relative;
     overflow: hidden;
+}
+
+.right-small {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    @media all and (max-width: $breakpointGrid) {
+        width: 50%;
+    }
 }
 
 .center-block {
@@ -166,7 +199,7 @@ button {
         }
     }
     .navbar-right {
-        margin-right: 8px;
+        margin-right: 24px;
         color: white;
         font-size: 16px;
         font-weight: 300;
@@ -250,9 +283,6 @@ button {
             }
         }
     }
-    .home-container {
-        max-width: 1165px;
-    }
     .title {
         width: 405px;
         height: auto;
@@ -261,15 +291,18 @@ button {
         text-align: left;
         position: absolute;
         top: 133px;
-        left: 87px;
         @media all and (max-width: $breakpointDesktop) {
             top: 101px;
             width: 347px;
             font-size: 36px;
         }
+        @media all and (max-width: 1098px) {
+            margin-left: 37px;
+        }
         @media all and (max-width: $breakpointTablet) {
             top: 179px;
             width: 296px;
+            margin-left: 0;
         }
     }
     .title-second {
@@ -282,14 +315,17 @@ button {
         text-align: left;
         position: absolute;
         top: 255px;
-        left: 87px;
         @media all and (max-width: $breakpointDesktop) {
             width: 323px;
             top: 208px;
         }
+        @media all and (max-width: 1098px) {
+            margin-left: 37px;
+        }
         @media all and (max-width: $breakpointTablet) {
             top: 323px;
             width: 288px;
+            margin-left: 0;
         }
     }
     .downloadMitto {
@@ -298,12 +334,14 @@ button {
         height: 40px;
         line-height: 40px;
         top: 379px;
-        left: 87px;
         position: absolute;
         border: none;
         border-radius: 2px;
         background-color: $brownish-orange;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        @media all and (max-width: 1098px) {
+            margin-left: 37px;
+        }
         @media all and (max-width: $breakpointTablet) {
             display: none;
         }
@@ -331,8 +369,12 @@ button {
         left: 50%;
         transform: translateX(-50%);
         @media all and (max-width: $breakpointDesktop) {
-            width: 640px;
-            height: 322px;
+            width: 840px;
+            height: 354px;
+        }
+        @media all and (max-width: $breakpointGrid) {
+            width: 650px;
+            height: 300px;
         }
         @media all and (max-width: $breakpointTablet) {
             display: none;
@@ -357,7 +399,6 @@ button {
 
 ////// DESCRIPTION //////
 .description {
-    max-width: 1165px;
     height: 625px;
     background-color: white;
     font-family: 'Montserrat';
@@ -366,18 +407,11 @@ button {
     display: flex;
     justify-content: center;
     position: relative;
-    @media all and (max-width: $breakpointDesktop) {
-        height: 540px;
-    }
     @media all and (max-width: $breakpointTablet) {
         display: none;
     }
     .center-block {
         width: 100%;
-        padding-left: 89px;
-        @media all and (max-width: $breakpointDesktop) {
-            padding-left: 20px;
-        }
     }
     .paragraph {
         height: 48px;
@@ -397,7 +431,7 @@ button {
         margin-top: 14px;
         width: 100%;
         padding-left: 20px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 1.63;
         text-align: left;
@@ -462,10 +496,12 @@ button {
 
 .prices {
     width: 100%;
+    max-width: 100%;
     background-color: white;
     display: block;
     position: relative;
     margin-bottom: 0;
+    overflow: hidden;
     .title {
         width: 100%;
         font-family: "Bitter";
@@ -507,30 +543,13 @@ button {
         }
     }
     .options {
+        max-width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         position: relative;
         transition: all 3s;
-        // .fa-angle-left {
-        //     left: 25px;
-        // }
-        // .fa-angle-right {
-        //     right: 25px;
-        // }
-        // .fa-angle-left,
-        // .fa-angle-right {
-        //     position: absolute;
-        //     top: 50%;
-        //     transform: translateY(-50%);
-        //     font-size: 45px;
-        //     cursor: pointer;
-        // }
-        // .active-option {
-        //     @media all and (max-width: $breakpointTablet) {
-        //         display: block !important;
-        //     }
-        // }
+
         .option-block {
             width: 184px;
             height: 166px;
@@ -613,12 +632,12 @@ button {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 118px;
-    @media all and (max-width: $breakpointDesktop) {
-        margin-top: 10px;
+    margin-top: 90px;
+    @media all and (max-width: $breakpointTablet) {
+        margin-top: 0px;
     }
     .content {
-        max-width: 1200px;
+        width: 976px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -629,6 +648,7 @@ button {
         }
         .left-download {
             width: calc(50% - 1px);
+            padding-right: 15px;
             @media all and (max-width: $breakpointTablet) {
                 width: 100%;
             }
@@ -640,7 +660,6 @@ button {
                     width: 100%;
                     left: 0;
                     top: 3;
-                    padding-left: 48px;
                 }
                 @media all and (max-width: $breakpointTablet) {
                     padding-left: 0px;
@@ -688,10 +707,12 @@ button {
                 @media all and (max-width: $breakpointTablet) {
                     margin-top: 24px;
                     margin-left: 16px;
+                    align-self: center;
+                    display: flex;
                 }
             }
             .label-description {
-                width: 95%;
+                max-width: 466px;
                 height: auto;
                 font-family: "Montserrat";
                 font-size: 16px;
@@ -701,12 +722,12 @@ button {
                 color: #fff4e0;
                 margin: 19px 0 32px;
                 @media all and (max-width: $breakpointDesktop) {
-                    width: 348px;
                     font-size: 14px;
                     line-height: 1.86;
                 }
                 @media all and (max-width: $breakpointTablet) {
-                    text-align: left;
+                    align-self: center;
+                    display: flex;
                     width: auto;
                     margin-right: 16px;
                     margin-bottom: 26px;
@@ -773,7 +794,7 @@ button {
             }
             .right-content-download {
                 @media all and (max-width: $breakpointDesktop) {
-                    padding-left: 13px;
+                    width: 300px
                 }
                 @media all and (max-width: $breakpointTablet) {
                     padding: 0;
@@ -796,6 +817,7 @@ button {
                 }
             }
             .package-content {
+                width: 330px;
                 height: 22px;
                 font-family: "Montserrat";
                 font-size: 16px;
@@ -1227,7 +1249,7 @@ button {
 }
 
 .slick-dots {
-    bottom: -10px !important;
+    bottom: 0px !important;
     li {
         button:before {
             font-size: 35px !important;
