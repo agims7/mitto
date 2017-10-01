@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="240px" viewBox="0 0 440 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>802D002E-9B6E-48C8-817E-395C0FA0DEBA</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="64" height="32" rx="2"></rect>
+        <rect id="path-2" x="0" y="0" width="64" height="32" rx="2"></rect>
+        <rect id="path-3" x="0" y="0" width="64" height="32" rx="2"></rect>
+        <rect id="path-4" x="0" y="0" width="64" height="32" rx="2"></rect>
+        <rect id="path-5" x="266" y="43" width="22" height="22" rx="1"></rect>
+        <rect id="path-6" x="266" y="109" width="22" height="22" rx="1"></rect>
+        <rect id="path-7" x="266" y="173" width="22" height="22" rx="1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Funkcje-/-Desktop" transform="translate(-486.000000, -1093.000000)">
+            <g id="Group-12" transform="translate(486.000000, 1069.000000)">
+                <g id="-g-Settings-Image" transform="translate(-206.000000, 24.000000)">
+                    <path d="M241,0 L875.999476,0 C878.761189,0 881,2.24147653 881,4.99894196 L881,235.001058 C881,237.761897 878.761407,240 875.999476,240 L246.000524,240 C243.238811,240 241,237.758523 241,235.001058 L241,0 Z" id="Rectangle" fill="#EAF0EF"></path>
+                    <g id="Group-5" transform="translate(478.000000, 38.000000)">
+                        <g id="Form-/-Small-Dropdown" transform="translate(105.000000, 0.000000)">
+                            <g id="Rectangle-3">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <rect stroke="#CCCCCC" stroke-width="1" x="0.5" y="0.5" width="63" height="31" rx="2"></rect>
+                            </g>
+                            <text id="Value" font-family="SegoeUI, Segoe UI 8" font-size="14" font-weight="normal" fill="#333333">
+                                <tspan x="8" y="21">2</tspan>
+                            </text>
+                            <polygon id="Triangle" fill="#666666" fill-rule="evenodd" transform="translate(47.000000, 16.000000) rotate(180.000000) translate(-47.000000, -16.000000) " points="47 12 52 20 42 20"></polygon>
+                        </g>
+                        <text id="Label-Copy-4" font-family="SegoeUI-Semibold, Segoe UI" font-size="14" font-weight="500" fill="#0C5F53">
+                            <tspan x="0" y="21">Ilość przesyłek</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4" transform="translate(477.000000, 82.000000)">
+                        <g id="Form-/-Small" transform="translate(106.000000, 0.000000)">
+                            <g id="Rectangle-3">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <rect stroke="#CCCCCC" stroke-width="1" x="0.5" y="0.5" width="63" height="31" rx="2"></rect>
+                            </g>
+                            <text id="Value" font-family="SegoeUI, Segoe UI 8" font-size="14" font-weight="normal" fill="#333333">
+                                <tspan x="24.453125" y="21">10</tspan>
+                            </text>
+                        </g>
+                        <text id="Label-Copy-5" font-family="SegoeUI-Semibold, Segoe UI" font-size="14" font-weight="500" fill="#0C5F53">
+                            <tspan x="0" y="21">Łączna waga</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-4-Copy" transform="translate(478.000000, 126.000000)">
+                        <g id="Form-/-Small" transform="translate(105.000000, 0.000000)">
+                            <g id="Rectangle-3">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                <rect stroke="#CCCCCC" stroke-width="1" x="0.5" y="0.5" width="63" height="31" rx="2"></rect>
+                            </g>
+                            <text id="Value" font-family="SegoeUI, Segoe UI 8" font-size="14" font-weight="normal" fill="#333333">
+                                <tspan x="28.2265625" y="21">5</tspan>
+                            </text>
+                        </g>
+                        <text id="Label-Copy-5" font-family="SegoeUI-Semibold, Segoe UI" font-size="14" font-weight="500" fill="#0C5F53">
+                            <tspan x="0" y="21">Waga paczki</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-3" transform="translate(478.000000, 170.000000)">
+                        <g id="Form-/-Small" transform="translate(105.000000, 0.000000)">
+                            <g id="Rectangle-3">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <rect stroke="#CCCCCC" stroke-width="1" x="0.5" y="0.5" width="63" height="31" rx="2"></rect>
+                            </g>
+                            <text id="Value" font-family="SegoeUI, Segoe UI 8" font-size="14" font-weight="normal" fill="#333333">
+                                <tspan x="24.453125" y="21">10</tspan>
+                            </text>
+                        </g>
+                        <text id="Label" font-family="SegoeUI-Semibold, Segoe UI" font-size="14" font-weight="500" fill="#0C5F53">
+                            <tspan x="0" y="21">Wymiary</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-7" transform="translate(305.000000, 24.000000)">
+                        <g id="Icon-/-Package-/-Normal">
+                            <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="64" height="64"></rect>
+                            <g id="Group-8" stroke-width="1" transform="translate(7.000000, 6.000000)" stroke="#14332B">
+                                <path d="M0,14.0032996 C0,13.4491925 0.392690301,12.795801 0.889763236,12.5373231 L24.1102368,0.462676883 C24.6016394,0.207147496 25.3926903,0.204198956 25.8897632,0.462676883 L49.1102368,12.5373231 C49.6016394,12.7928525 50,13.4512787 50,14.0032996 L50,37.9967004 C50,38.5508075 49.6073097,39.204199 49.1102368,39.4626769 L25.8897632,51.5373231 C25.3983606,51.7928525 24.6073097,51.795801 24.1102368,51.5373231 L0.889763236,39.4626769 C0.39836057,39.2071475 0,38.5487213 0,37.9967004 L0,14.0032996 Z" id="Path-2" stroke-width="4" fill="#54D2B6"></path>
+                                <polyline id="Path-2-Copy" stroke-width="4" points="50 13 25 26 0 13"></polyline>
+                                <path d="M38,6 L13,19" id="Path-2-Copy-4" stroke-width="2"></path>
+                                <path d="M25,26 L25,52" id="Path-3" stroke-width="4"></path>
+                                <path d="M12,20 L12,46" id="Path-3-Copy-2" stroke-width="2"></path>
+                                <path d="M38,19 L38,45" id="Path-3-Copy-3" stroke-width="2"></path>
+                                <path d="M12.1213445,5.77178422 L36.8786555,19.2282158" id="Path-2-Copy-5" stroke-width="2" fill="#54D2B6"></path>
+                            </g>
+                        </g>
+                        <text id="Label-Copy-4" font-family="SegoeUI-Semibold, Segoe UI" font-size="14" font-weight="500" fill="#0C5F53">
+                            <tspan x="80.0864258" y="39">Paczka</tspan>
+                        </text>
+                    </g>
+                    <path d="M0,5.0010033 C0,2.23902544 2.23191468,0 5.00593211,0 L241,0 L241,48 L0,48 L0,5.0010033 Z" id="Rectangle-5" fill="#EAF0EF"></path>
+                    <g id="Group-8" transform="translate(305.000000, 88.000000)">
+                        <text id="Label-Copy-7" font-family="SegoeUI-Semibold, Segoe UI" font-size="14" font-weight="500" fill="#0C5F53">
+                            <tspan x="80.2260742" y="38">Paleta</tspan>
+                        </text>
+                        <g id="Icon-/-Palette-/-Normal">
+                            <rect id="Rectangle" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="64" height="64"></rect>
+                            <g id="Group-7" stroke-width="1" transform="translate(7.000000, 16.000000)">
+                                <polygon id="Path-2-Copy-3" stroke="#15362F" stroke-width="4" fill="#54D2B6" points="0 29 0 20 25 7 50 20 50 29 25 42"></polygon>
+                                <path d="M16,38 L16,29" id="Path-2-Copy-6" stroke="#15362F" stroke-width="2"></path>
+                                <path d="M9,34 L9,25" id="Path-2-Copy-7" stroke="#15362F" stroke-width="2"></path>
+                                <polyline id="Path-2-Copy-2" stroke="#15362F" stroke-width="4" points="50 20 25 33 0 20"></polyline>
+                                <path d="M25,32.5 L25,42" id="Path-3-Copy" stroke="#15362F" stroke-width="4"></path>
+                                <g id="Group-8-Copy" transform="translate(13.000000, 0.000000)" stroke="#14332B" stroke-width="2">
+                                    <path d="M0,7.49850233 C0,6.94704472 0.401739962,6.29109522 0.878975727,6.04293262 L11.6210243,0.457067378 C12.1064692,0.204636035 12.90174,0.20890478 13.3789757,0.457067378 L24.1210243,6.04293262 C24.6064692,6.29536396 25,6.94748943 25,7.49850233 L25,18.5014977 C25,19.0529553 24.59826,19.7089048 24.1210243,19.9570674 L13.3789757,25.5429326 C12.8935308,25.795364 12.09826,25.7910952 11.6210243,25.5429326 L0.878975727,19.9570674 C0.393530837,19.704636 0,19.0525106 0,18.5014977 L0,7.49850233 Z" id="Path-2" fill="#8DECD9"></path>
+                                    <polyline id="Path-2-Copy" points="25 6.5 12.5 13 0 6.5"></polyline>
+                                    <path d="M13,13 L13,26" id="Path-3"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-9" transform="translate(305.000000, 152.000000)">
+                        <text id="Label-Copy-8" font-family="SegoeUI-Semibold, Segoe UI" font-size="14" font-weight="500" fill="#0C5F53">
+                            <tspan x="80.2026367" y="38">List</tspan>
+                        </text>
+                        <g id="Icon-/-Letter-/-Normal">
+                            <rect id="Rectangle" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="64" height="64"></rect>
+                            <g id="Group-6" stroke-width="1" transform="translate(2.000000, 16.000000)" stroke="#14332B">
+                                <path d="M3.55271368e-15,23 L35,3.55271368e-15 C35,3.55271368e-15 40.3664987,1.55057931 47,5 C53.6335013,8.44942069 60,13 60,13 L60,16 L25,39 C25,39 17.649192,36.6975798 11.5,33.5 C5.35080804,30.3024202 3.55271368e-15,26 3.55271368e-15,26 L3.55271368e-15,23 Z" id="Path-2" stroke-width="4" fill="#54D2B6"></path>
+                                <path d="M24.5,38.5 L26.7229043,30.8292939 C26.87594,30.3012045 26.6044922,29.6537671 26.1169798,29.3834079 L11.8830202,21.4896956 C11.3953416,21.2192442 10.5830439,21.1667824 10.0771484,21.3691406 L1,25" id="Path-2-Copy-4" stroke-width="2"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <polygon id="Line" fill-opacity="0.3" fill="#0C5F53" fill-rule="nonzero" points="452 24 452 216 453 216 453 24"></polygon>
+                    <g id="Rectangle-4">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <rect stroke-opacity="0.3" stroke="#000000" stroke-width="1" x="265.5" y="42.5" width="23" height="23" rx="1"></rect>
+                    </g>
+                    <polyline id="Path-3" stroke="#353535" stroke-width="2" points="269 54 274 59 284 49"></polyline>
+                    <g id="Rectangle-4-Copy">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        <rect stroke-opacity="0.3" stroke="#000000" stroke-width="1" x="265.5" y="108.5" width="23" height="23" rx="1"></rect>
+                    </g>
+                    <g id="Rectangle-4-Copy-2">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <rect stroke-opacity="0.3" stroke="#000000" stroke-width="1" x="265.5" y="172.5" width="23" height="23" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -65,10 +65,15 @@ button {
   flex-direction: column;
   align-items: center;
   position: relative;
-  overflow: hidden; }
+  overflow: visible; }
   @media all and (max-width: 1024px) {
     .left-small {
       width: 50%; } }
+  @media all and (max-width: 1024px) {
+    .left-small .center-block {
+      width: calc(100% + 24px);
+      left: -24px;
+      position: relative; } }
 
 .right {
   width: 50%;
@@ -87,12 +92,17 @@ button {
   overflow: hidden; }
   @media all and (max-width: 1024px) {
     .right-small {
-      width: 50%; } }
+      width: 50%;
+      padding-left: 14px;
+      align-items: right; } }
 
 .center-block {
   display: flex;
   flex-direction: column;
   align-items: left; }
+
+.font-bold {
+  font-weight: 500; }
 
 .cookies {
   position: fixed;
@@ -219,6 +229,9 @@ button {
   display: block;
   position: relative;
   color: white; }
+  @media all and (max-width: 1024px) {
+    .home {
+      height: 813px; } }
   @media all and (max-width: 768px) {
     .home {
       height: 514px !important;
@@ -355,9 +368,13 @@ button {
   display: flex;
   justify-content: center;
   position: relative; }
+  @media all and (max-width: 1024px) {
+    .description {
+      margin: 0 0 0 48px; } }
   @media all and (max-width: 768px) {
     .description {
-      display: none; } }
+      display: none;
+      margin: 0 auto; } }
   .description .center-block {
     width: 100%; }
   .description .paragraph {
@@ -408,17 +425,55 @@ button {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    height: 440px;
     position: relative; }
     .description .image-description .image-description-content {
       width: 100%;
       height: 100%; }
-  .description .wysylka {
-    display: block; }
-  .description .koszyk,
-  .description .historia,
-  .description .oszczednosci {
-    display: none; }
+      @media all and (max-width: 1024px) {
+        .description .image-description .image-description-content {
+          width: auto; } }
+  .description .audyt {
+    display: block;
+    border-radius: 5px;
+    background-color: #f7fcfb;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.21); }
+    .description .audyt .image-description-content {
+      padding: 18px 24px 24px; }
+  .description .sugestie {
+    border-radius: 5px;
+    background-color: #f7fcfb;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.21); }
+    .description .sugestie .image-description-content {
+      padding: 18px 24px 24px; }
+  .description .wysylka .front {
+    z-index: 2;
+    position: absolute;
+    padding: 24px 0;
+    border-radius: 5px;
+    width: 440px;
+    background-color: #f7fcfb;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.21); }
+  .description .wysylka .back {
+    z-index: 1;
+    position: relative;
+    top: 124px;
+    left: 51px;
+    padding: 24px;
+    border-radius: 5px;
+    background-color: #f7fcfb;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.21); }
+
+.oszczednosci {
+  border-radius: 5px;
+  background-color: #f7fcfb;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.21); }
+  .oszczednosci .image-description-content {
+    padding: 18px 24px 24px; }
+
+.sugestie,
+.wysylka,
+.oszczednosci {
+  display: none; }
 
 .prices {
   width: 100%;
@@ -628,7 +683,6 @@ button {
       @media all and (max-width: 768px) {
         .download .content .left .label-description {
           align-self: center;
-          display: flex;
           width: auto;
           margin-right: 16px;
           margin-bottom: 26px;
@@ -705,14 +759,15 @@ button {
           height: auto; } }
     .download .content .right .package-content {
       width: 330px;
-      height: 22px;
+      height: auto;
       font-family: "Montserrat";
       font-size: 16px;
       font-weight: 300;
       line-height: 1.38;
       text-align: left;
       color: #fff4e0;
-      margin-top: 19px; }
+      margin-top: 19px;
+      display: flex; }
       @media all and (max-width: 768px) {
         .download .content .right .package-content {
           margin: 0 16px 10px;
