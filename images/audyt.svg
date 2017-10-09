@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="642px" height="316px" viewBox="0 0 642 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>71D14252-5172-4212-9906-0E66E99AFD76</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="93.5192712%" y1="22.2793416%" x2="8.84599751%" y2="22.2793415%" id="linearGradient-1">
+            <stop stop-color="#FD7213" offset="0%"></stop>
+            <stop stop-color="#E85800" offset="17.9965409%"></stop>
+            <stop stop-color="#B8ADA6" offset="20.3056722%"></stop>
+            <stop stop-color="#7D6960" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="73" cy="183" r="8"></circle>
+        <circle id="path-3" cx="236" cy="120" r="8"></circle>
+        <circle id="path-4" cx="418" cy="193" r="8"></circle>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Funkcje-/-Desktop" transform="translate(-486.000000, -80.000000)">
+            <g id="Group-16" transform="translate(486.000000, 80.000000)">
+                <g id="-g-Audit-Image" transform="translate(-63.000000, -16.000000)">
+                    <circle id="Oval-2" fill="#FFEBDE" cx="505.5" cy="232.5" r="229.5"></circle>
+                    <polyline id="Line-2" stroke="url(#linearGradient-1)" stroke-width="8" stroke-linecap="square" stroke-linejoin="bevel" points="0.5 327.5 161.5 221.5 326.5 159.5 507 235.5 654 0"></polyline>
+                    <g id="-g-Pakiet-Brązowy" transform="translate(480.000000, 256.000000)" stroke="#E36224" fill="#FFC29B">
+                        <path d="M0.534850321,13.5825831 L24.5348503,0.971661074 L24.5348503,0.971661074 C24.8260721,0.818637136 25.1739279,0.818637136 25.4651497,0.971661074 L49.4651497,13.5825831 L49.4651497,13.5825831 C49.7940324,13.7553962 50,14.0962937 50,14.4678151 L50,39.5321849 L50,39.5321849 C50,39.9037063 49.7940324,40.2446038 49.4651497,40.4174169 L25.4651497,53.0283389 L25.4651497,53.0283389 C25.1739279,53.1813629 24.8260721,53.1813629 24.5348503,53.0283389 L0.534850321,40.4174169 L0.534850321,40.4174169 C0.205967602,40.2446038 2.13020562e-15,39.9037063 -5.55111512e-16,39.5321849 L0,14.4678151 L0,14.4678151 C6.1445646e-16,14.0962937 0.205967602,13.7553962 0.534850321,13.5825831 Z" id="Path-2-Copy-3" stroke-width="4"></path>
+                        <polyline id="Path-2-Copy-2" stroke-width="4" points="50 14 25 27 0 14"></polyline>
+                        <path d="M39,7 L14,20" id="Path-2-Copy-7" stroke-width="2"></path>
+                        <path d="M26,27 L26,53" id="Path-3-Copy" stroke-width="4"></path>
+                        <path d="M13,21 L13,47" id="Path-3-Copy-5" stroke-width="2"></path>
+                        <path d="M39,20 L39,46" id="Path-3-Copy-4" stroke-width="2"></path>
+                        <path d="M13,7 L38,21" id="Path-2-Copy-6" stroke-width="2"></path>
+                    </g>
+                    <g id="Group-14" transform="translate(87.000000, 40.000000)">
+                        <g id="Oval">
+                            <use fill="#89766D" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <circle stroke="#F7FCFB" stroke-width="4" cx="73" cy="183" r="10"></circle>
+                        </g>
+                        <g id="Oval-Copy">
+                            <use fill="#9D8E86" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <circle stroke="#FFEBDE" stroke-width="4" cx="236" cy="120" r="10"></circle>
+                        </g>
+                        <g id="Oval-Copy-2">
+                            <use fill="#E36224" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <circle stroke="#FFEBDE" stroke-width="4" cx="418" cy="193" r="10"></circle>
+                        </g>
+                        <rect id="Rectangle-14" fill="#D8D8D8" x="0" y="0" width="200" height="8" rx="4"></rect>
+                        <rect id="Rectangle-14-Copy" fill="#D8D8D8" x="0" y="16" width="200" height="8" rx="4"></rect>
+                        <rect id="Rectangle-14-Copy-2" fill="#D8D8D8" x="0" y="32" width="140" height="8" rx="4"></rect>
+                        <rect id="Rectangle-14-Copy-3" fill="#D8D8D8" x="0" y="48" width="200" height="8" rx="4"></rect>
+                        <rect id="Rectangle-14-Copy-4" fill="#D8D8D8" x="0" y="64" width="200" height="8" rx="4"></rect>
+                        <rect id="Rectangle-14-Copy-5" fill="#D8D8D8" x="0" y="80" width="170" height="8" rx="4"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

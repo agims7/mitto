@@ -433,6 +433,7 @@ button {
         .description .image-description .image-description-content {
           width: auto; } }
   .description .audyt {
+    margin: 0 14px;
     display: block;
     border-radius: 5px;
     background-color: #f7fcfb;
@@ -440,6 +441,7 @@ button {
     .description .audyt .image-description-content {
       padding: 18px 24px 24px; }
   .description .sugestie {
+    margin: 0 14px;
     border-radius: 5px;
     background-color: #f7fcfb;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.21); }
@@ -464,6 +466,7 @@ button {
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.21); }
 
 .oszczednosci {
+  margin: 0 14px;
   border-radius: 5px;
   background-color: #f7fcfb;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.21); }
