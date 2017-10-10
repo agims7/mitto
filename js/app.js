@@ -127,11 +127,11 @@ $(document).ready(function () {
 
     /////////////// TABS ///////////////
 
-    var intervalFunctions = [second, third, fourth, first];
-    var intervalIndex = 0;
-    window.setInterval(function () {
-        intervalFunctions[intervalIndex++ % intervalFunctions.length]();
-    }, 5500);
+    // var intervalFunctions = [second, third, fourth, first];
+    // var intervalIndex = 0;
+    // window.setInterval(function () {
+    //     intervalFunctions[intervalIndex++ % intervalFunctions.length]();
+    // }, 5500);
 
     $(".paragraph-first").click(first);
     $(".paragraph-second").click(second);
@@ -140,9 +140,9 @@ $(document).ready(function () {
 
     function first() {
         $(".paragraph-first-second").css({ "opacity": "1", "height": "auto" });
-        $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-second-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-third-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
         $(".audyt").css({ "display": "block" });
         $(".sugestie").css({ "display": "none" });
         $(".wysylka").css({ "display": "none" });
@@ -154,10 +154,10 @@ $(document).ready(function () {
     }
 
     function second() {
-        $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-second-second").css({ "opacity": "1", "height": "auto" });
-        $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-first-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-second-second").css({ "opacity": "1", "height": "auto", "margin-top": "14px" });
+        $(".paragraph-third-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
         $(".audyt").css({ "display": "none" });
         $(".sugestie").css({ "display": "block" });
         $(".wysylka").css({ "display": "none" });
@@ -169,10 +169,10 @@ $(document).ready(function () {
     }
 
     function third() {
-        $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-third-second").css({ "opacity": "1", "height": "auto" });
-        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0" });
+        $(".paragraph-first-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-second-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-third-second").css({ "opacity": "1", "height": "auto", "margin-top": "14px" });
+        $(".paragraph-fourth-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
         $(".audyt").css({ "display": "none" });
         $(".sugestie").css({ "display": "none" });
         $(".wysylka").css({ "display": "block" });
@@ -184,10 +184,10 @@ $(document).ready(function () {
     }
 
     function fourth() {
-        $(".paragraph-first-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-second-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-third-second").css({ "opacity": "0", "height": "0" });
-        $(".paragraph-fourth-second").css({ "opacity": "1", "height": "auto" });
+        $(".paragraph-first-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-second-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-third-second").css({ "opacity": "0", "height": "0", "margin-top": "0" });
+        $(".paragraph-fourth-second").css({ "opacity": "1", "height": "auto", "margin-top": "14px" });
         $(".audyt").css({ "display": "none" });
         $(".sugestie").css({ "display": "none" });
         $(".wysylka").css({ "display": "none" });
