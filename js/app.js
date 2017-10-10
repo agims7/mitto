@@ -127,11 +127,11 @@ $(document).ready(function () {
 
     /////////////// TABS ///////////////
 
-    // var intervalFunctions = [second, third, fourth, first];
-    // var intervalIndex = 0;
-    // window.setInterval(function () {
-    //     intervalFunctions[intervalIndex++ % intervalFunctions.length]();
-    // }, 5500);
+    var intervalFunctions = [second, third, fourth, first];
+    var intervalIndex = 0;
+    window.setInterval(function () {
+        intervalFunctions[intervalIndex++ % intervalFunctions.length]();
+    }, 5500);
 
     $(".paragraph-first").click(first);
     $(".paragraph-second").click(second);
