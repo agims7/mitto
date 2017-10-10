@@ -877,12 +877,11 @@ button {
 .contact {
   background-color: white;
   display: flex;
-  margin-bottom: 50px;
-  overflow: hidden; }
+  margin-bottom: 66px;
+  overflow: visible !important; }
   @media all and (max-width: 1200px) {
     .contact {
-      display: block;
-      margin-bottom: 153px; } }
+      display: block; } }
   @media all and (max-width: 768px) {
     .contact {
       margin: 0 0px 66px 16px !important; } }
@@ -1006,6 +1005,7 @@ button {
         background-color: rgba(0, 0, 0, 0.1);
         margin: 22px 16px 22px 0; } }
   .contact .right {
+    overflow: visible !important;
     margin-top: 65px;
     align-items: left; }
     @media all and (max-width: 1200px) {
@@ -1037,16 +1037,15 @@ button {
       display: block;
       overflow: hidden;
       z-index: 2;
-      margin: 15px; }
+      margin: 15px 0; }
       @media all and (max-width: 1200px) {
         .contact .right .contact-form {
-          width: calc(100% - 30px);
+          width: 100%;
           height: 537px;
           margin-bottom: 50px; } }
       @media all and (max-width: 1024px) {
         .contact .right .contact-form {
-          margin: 0 10px;
-          width: calc(100% - 20px); } }
+          width: 100%; } }
       @media all and (max-width: 768px) {
         .contact .right .contact-form {
           height: auto;
