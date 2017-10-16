@@ -318,11 +318,11 @@
                     <img src="images/group-26-copy.svg" class="contact-form-image">
                     <p class="contact-form-label">Napisz do nas</p>
                     <p class="contact-form-description">Chcesz z nami współpracować? Masz uwagi do działania Mitto+? A może zwyczajnie potrzebujesz pomocy? </p>
-                    <form action="mail.php" method="POST">
-                        <input required type="email" name="email" placeholder="Twój adres e-mail">
-                        <input required type="tel" name="tel" placeholder="Telefon">
-                        <textarea required name="message" placeholder="Jak możemy Ci pomóc?"></textarea>
-                        <button type="submit">Napisz do nas</button>
+                    <form id="ajax-contact" method="post" action="mail.php">
+                        <input required type="email" name="email" id="email" placeholder="Twój adres e-mail">
+                        <input required type="tel" name="tel" id="tel"  placeholder="Telefon">
+                        <textarea required name="message" id="message" placeholder="Jak możemy Ci pomóc?"></textarea>
+                        <button type="submit" id="submit">Napisz do nas</button>
                     </form>
                     <div class="additional-background-2"></div>
                 </div>

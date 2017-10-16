@@ -117,7 +117,7 @@ $(document).ready(function () {
         }
     });
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         var modal = $(".modal");
         if (event.target.id == modal["0"].id) {
             $(".modal").css("display", "none");
@@ -197,4 +197,32 @@ $(document).ready(function () {
         $(".paragraph-third").removeClass("active-paragraph");
         $(".paragraph-fourth").addClass("active-paragraph");
     }
+
+});
+
+// FORM
+$(function () {
+    var form = $('#ajax-contact');
+    $(form).submit(function (event) {
+        event.preventDefault();
+        var formData = $(form).serialize();
+        $.ajax({
+            type: 'POST',
+            url: $(form).attr('action'),
+            data: formData
+        })
+            .done(function (response) {
+                alert(response);
+                $('#tel').val('');
+                $('#email').val('');
+                $('#message').val('');
+            })
+            .fail(function (data) {
+                if (data.responseText !== '') {
+                    alert(data.responseText);
+                } else {
+                    alert('Oops! An error occured and your message could not be sent.');
+                }
+            });
+    });
 });
