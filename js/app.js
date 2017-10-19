@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
     if (window.innerWidth <= 768) {
@@ -57,6 +58,14 @@ $(document).ready(function () {
     });
 
     /////////////// Video section ///////////////
+
+    if (window.location.hash == "#video") {
+        $(".youtube-container").css("display", "block");
+        setTimeout(function () {
+            playVideo();
+        }, 1500);
+        
+    }
 
     $(".video-link").on('click', function (event) {
         $(".youtube-container").css("display", "block");
